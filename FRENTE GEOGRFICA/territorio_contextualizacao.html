@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Território e Contextualização</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="territorio_contextualizacao_files/libs/clipboard/clipboard.min.js"></script>
+<script src="territorio_contextualizacao_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="territorio_contextualizacao_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="territorio_contextualizacao_files/libs/quarto-html/popper.min.js"></script>
+<script src="territorio_contextualizacao_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="territorio_contextualizacao_files/libs/quarto-html/anchor.min.js"></script>
+<link href="territorio_contextualizacao_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="territorio_contextualizacao_files/libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="territorio_contextualizacao_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="territorio_contextualizacao_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="territorio_contextualizacao_files/libs/bootstrap/bootstrap-efbb37e9afcc02144ebbc7afd12a776f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Território e Contextualização</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<style>
+  :root{
+    --paper:#FFFFFF;
+    --ink:#212529;
+    --ink-soft:#495057;
+    --ink-faint:#868E96;
+    --line:#E1E6EB;
+    --surface:#FFFFFF;
+    --surface-2:#F3F6F8;
+    --primary:#2B5B84;
+    --primary-soft:#E3ECF3;
+    --secondary:#4A7C9E;
+    --secondary-soft:#EAF1F5;
+    --destaque:#B7472A;
+    --destaque-soft:#F5E3DC;
+    --shadow: 0 1px 2px rgba(33,37,41,0.05), 0 6px 18px -10px rgba(33,37,41,0.14);
+  }
+  :root[data-theme="dark"]{
+    --paper:#15191E;
+    --ink:#EEF1F4;
+    --ink-soft:#B6BEC6;
+    --ink-faint:#7C848D;
+    --line:#2B323A;
+    --surface:#1B2027;
+    --surface-2:#20262D;
+    --primary:#7FADD1;
+    --primary-soft:#1F313E;
+    --secondary:#9AC2D9;
+    --secondary-soft:#20313B;
+    --destaque:#E58562;
+    --destaque-soft:#3A2620;
+    --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 6px 18px -10px rgba(0,0,0,0.5);
+  }
+
+  *{ box-sizing:border-box; }
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'IBM Plex Sans', -apple-system, sans-serif;
+    max-width:100%;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{ font-family:'Fraunces', Georgia, serif; text-wrap:balance; margin:0; }
+  p{ margin:0; }
+  .tab{ font-variant-numeric: tabular-nums; }
+  .col{ max-width:760px; margin-inline:auto; padding-inline:20px; }
+
+  /* ---- top bar / tabs ---- */
+  .topbar{
+    position:sticky; top:env(safe-area-inset-top,0px); z-index:50;
+    background:color-mix(in srgb, var(--paper) 92%, transparent);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .topbar-inner{ max-width:760px; margin-inline:auto; padding:14px 20px 0; }
+  .brand{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:12px; }
+  .brand-name{ font-family:'Fraunces',serif; font-weight:600; font-size:15px; color:var(--primary); }
+  .brand-sub{ font-size:11.5px; color:var(--ink-faint); }
+  .tabs{ display:flex; gap:2px; }
+  .tab-btn{
+    appearance:none; border:none; background:none; cursor:pointer;
+    font-family:'IBM Plex Sans',sans-serif; font-size:14px; font-weight:500;
+    color:var(--ink-faint); padding:10px 4px 12px; margin-right:26px;
+    border-bottom:2.5px solid transparent; transition:color .15s,border-color .15s;
+  }
+  .tab-btn .n{ font-family:'IBM Plex Mono',monospace; font-size:11px; margin-right:6px; color:var(--ink-faint); }
+  .tab-btn.active{ color:var(--ink); border-color:var(--destaque); }
+  .tab-btn.active .n{ color:var(--destaque); }
+  .tab-btn:hover{ color:var(--ink); }
+  @media (max-width:480px){ .tab-btn{ margin-right:16px; font-size:13px; } }
+
+  /* ---- page ---- */
+  .page{ padding-block:34px 56px; }
+  .eyebrow{
+    font-size:12px; font-weight:600; letter-spacing:0.07em; text-transform:uppercase;
+    color:var(--destaque); margin-bottom:10px; display:block;
+  }
+  .page h1{ font-size:clamp(24px,4.4vw,34px); line-height:1.14; font-weight:600; }
+  .page .lede{
+    margin-top:16px; font-size:15.5px; line-height:1.68; color:var(--ink-soft);
+    text-align:justify; text-justify:inter-word; hyphens:auto;
+  }
+  .lede strong{ color:var(--ink); font-weight:600; }
+
+  /* ---- stat row ---- */
+  .stats{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:1px; background:var(--line); border:1px solid var(--line); border-radius:12px;
+    overflow:hidden; margin-top:26px;
+  }
+  .stat{ background:var(--surface); padding:14px 15px 13px; }
+  .stat .v{ font-family:'IBM Plex Mono',monospace; font-size:19px; font-weight:600; letter-spacing:-0.01em; }
+  .stat .l{ font-size:11px; color:var(--ink-soft); margin-top:4px; line-height:1.3; }
+
+  /* ---- card ---- */
+  .card{
+    background:var(--surface); border:1px solid var(--line); border-radius:14px;
+    padding:20px 20px 17px; box-shadow:var(--shadow); margin-top:20px;
+  }
+  .card h3{ font-size:13.5px; font-weight:600; color:var(--ink); margin-bottom:2px; font-family:'IBM Plex Sans',sans-serif; }
+  .card .sub{ font-size:12px; color:var(--ink-faint); margin-bottom:14px; }
+  .card .cap{ font-size:11.5px; color:var(--ink-faint); line-height:1.55; margin-top:12px; text-align:justify; }
+
+  /* ---- ranked rows (elevation / vegetation / uso do solo) ---- */
+  .rank-row{ display:flex; align-items:center; gap:10px; padding:6px 0; }
+  .rank-name{ width:92px; flex:none; font-size:12.5px; font-weight:500; color:var(--ink-soft); }
+  .rank-track{ flex:1; height:9px; background:var(--surface-2); border-radius:5px; overflow:hidden; }
+  .rank-fill{ height:100%; border-radius:5px; }
+  .rank-val{ width:56px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-soft); }
+  .rank-note{ font-size:11.5px; color:var(--ink-faint); margin:-2px 0 10px 102px; }
+
+  /* ---- basins ---- */
+  .basins{ display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-top:4px; }
+  @media (max-width:480px){ .basins{ grid-template-columns:1fr; } }
+  .basin{ display:flex; gap:9px; align-items:flex-start; padding:10px; background:var(--surface-2); border-radius:10px; }
+  .basin .dot{ width:10px; height:10px; border-radius:50%; margin-top:4px; flex:none; }
+  .basin .t{ font-size:12.5px; font-weight:600; }
+  .basin .d{ font-size:11.5px; color:var(--ink-soft); line-height:1.4; margin-top:1px; }
+
+  /* ---- seasonal cycle ---- */
+  .season-bar{ display:flex; gap:2px; margin-top:6px; }
+  .season-seg{ flex:1; height:24px; border-radius:4px; position:relative; }
+  .season-seg span{
+    position:absolute; bottom:-17px; left:50%; transform:translateX(-50%);
+    font-size:9.5px; color:var(--ink-faint); font-family:'IBM Plex Mono',monospace;
+  }
+  .season-legend{ display:flex; gap:16px; margin:26px 0 2px; flex-wrap:wrap; }
+  .season-legend .item{ display:flex; align-items:center; gap:6px; font-size:11.5px; color:var(--ink-soft); }
+  .season-legend .sw{ width:10px; height:10px; border-radius:3px; }
+
+  /* ---- bubble chart ---- */
+  svg.chart{ width:100%; height:auto; display:block; overflow:visible; }
+  .axis-label{ font-size:10.5px; fill:var(--ink-faint); font-family:'IBM Plex Sans',sans-serif; }
+  .grid-line{ stroke:var(--line); stroke-width:1; }
+  .bubble{ cursor:pointer; stroke:var(--surface); stroke-width:1.5; }
+  .bubble-label{ font-size:10.5px; font-weight:600; fill:var(--ink); font-family:'IBM Plex Sans',sans-serif; pointer-events:none; }
+
+  .ramp-legend{ display:flex; align-items:center; gap:10px; margin-top:16px; }
+  .ramp-bar{ flex:1; height:9px; border-radius:5px; }
+  .ramp-legend .lo,.ramp-legend .hi{ font-size:11px; font-family:'IBM Plex Mono',monospace; color:var(--ink-soft); flex:none; }
+  .size-legend{ display:flex; gap:22px; margin-top:14px; align-items:center; }
+  .size-legend .sl{ display:flex; align-items:center; gap:8px; }
+  .size-legend circle{ fill:none; stroke:var(--ink-faint); stroke-width:1.2; }
+  .size-legend .sl-l{ font-size:11px; color:var(--ink-soft); }
+
+  /* ---- tooltip ---- */
+  #tooltip{
+    position:fixed; pointer-events:none; z-index:200; background:var(--ink); color:var(--paper);
+    padding:9px 12px; border-radius:9px; font-size:12px; line-height:1.5; max-width:220px;
+    box-shadow:0 8px 24px -8px rgba(0,0,0,0.4); opacity:0; transform:translate(-50%,-100%);
+    transition:opacity .1s;
+  }
+  #tooltip b{ font-weight:600; }
+  #tooltip .row{ display:flex; justify-content:space-between; gap:14px; }
+
+  /* ---- vuln bars ---- */
+  .vbar-row{ display:flex; align-items:center; gap:10px; padding:7px 0; cursor:pointer; }
+  .vbar-name{ width:92px; flex:none; font-size:12.5px; font-weight:500; }
+  .vbar-track{ flex:1; height:16px; background:var(--surface-2); border-radius:5px; overflow:hidden; }
+  .vbar-fill{ height:100%; border-radius:5px; transition:filter .15s; }
+  .vbar-row:hover .vbar-fill{ filter:brightness(1.08); }
+  .vbar-val{ width:34px; flex:none; text-align:right; font-family:'IBM Plex Mono',monospace; font-size:12px; color:var(--ink-soft); }
+
+  /* ---- choropleth map ---- */
+  .map-region{ cursor:pointer; stroke:var(--surface); stroke-width:1.6; }
+  .map-label{
+    font-size:11px; font-weight:600; font-family:'IBM Plex Sans',sans-serif; fill:var(--ink);
+    paint-order:stroke; stroke:var(--surface); stroke-width:3px; stroke-linejoin:round;
+    text-anchor:middle; pointer-events:none;
+  }
+
+  /* ---- closing ---- */
+  .closing{
+    background:var(--surface-2); border-radius:16px; padding:24px 22px; margin-top:20px;
+    border-left:4px solid var(--primary);
+  }
+  .closing p{ font-size:14.5px; line-height:1.68; color:var(--ink); text-align:justify; text-justify:inter-word; }
+  .closing p + p{ margin-top:13px; }
+
+  footer{ padding-block:30px 54px; border-top:1px solid var(--line); margin-top:8px; }
+  footer .cols{ display:grid; grid-template-columns:1fr 1fr; gap:22px; }
+  @media (max-width:560px){ footer .cols{ grid-template-columns:1fr; } }
+  footer h4{ font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink-faint); margin-bottom:9px; font-weight:600; }
+  footer .src{ font-size:11.5px; color:var(--ink-soft); line-height:1.7; }
+  footer .note{ font-size:11px; color:var(--ink-faint); margin-top:20px; line-height:1.6; text-align:justify; }
+</style>
+<style>
+  .doc-fig{ width:100%; max-width:520px; display:block; margin:20px auto 6px; border-radius:10px; border:1px solid var(--line); }
+  .doc-fig-wide{ max-width:100%; }
+  .doc-cap{ font-size:12.5px; color:var(--ink-faint); text-align:center; margin:0 0 22px; }
+  .doc-p{ font-size:15px; line-height:1.72; color:var(--ink-soft); text-align:justify; text-justify:inter-word; hyphens:auto; margin:16px 0; }
+  .doc-p strong{ color:var(--ink); font-weight:600; }
+  .doc-note{ font-size:12.5px; color:var(--ink-faint); background:var(--surface-2); border-left:3px solid var(--secondary); padding:10px 14px; border-radius:6px; margin:14px 0; text-align:justify; }
+  .refs h4{ font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:var(--destaque); margin:34px 0 10px; font-weight:600; }
+  .refs .ref-item{ font-size:12px; color:var(--ink-soft); line-height:1.6; margin-bottom:10px; text-align:justify; }
+  .doc-figs-row{ display:flex; gap:16px; flex-wrap:wrap; justify-content:center; }
+  .doc-figs-row .fig-col{ flex:1; min-width:220px; max-width:320px; }
+  .doc-figs-row .doc-fig{ max-width:100%; margin-bottom:4px; }
+</style>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap" rel="stylesheet">
+
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Geografia e Mudanças Climáticas</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">População e Mudanças Climáticas</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="col">
+<p class="doc-p">Belo Horizonte é a capital de Minas Gerais e núcleo da Região Metropolitana de Belo Horizonte (RMBH), a terceira maior região metropolitana do país em população, segundo o Censo 2022, à frente de todas as demais, com exceção de São Paulo e Rio de Janeiro. Nesse cenário nacional e regional, o município está diretamente exposto à intensificação dos extremos climáticos observada no Brasil: o Sudeste brasileiro vem registrando, nas últimas décadas, aumento na frequência de ondas de calor e de eventos de chuva intensa, e a cidade acompanha hoje a evolução do episódio de <strong>El Niño 2026/2027</strong>, classificado pela National Oceanic and Atmospheric Administration (NOAA) como um dos mais intensos desde o início dos registros, em 1950, com expectativa de permanência até março de 2027. Esses extremos têm relação direta com a saúde da população, pois ondas de calor e chuvas intensas agravam doenças cardiovasculares e respiratórias, favorecem a proliferação de vetores e ampliam a vulnerabilidade de grupos como idosos e crianças (Arsad et al., 2022; Liu et al. 2022; Uibel et al., 2022; Silveira et al., 2023). Esses riscos tendem a ser mais severos justamente nas áreas com menor cobertura vegetal e maior impermeabilização do solo, o que reforça a relevância de estratégias de adaptação baseadas na natureza, como a ampliação e a conservação de áreas verdes urbanas.</p>
+
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="saidas/01_fisico_clima/figuras_e_tabelas/mapa_01_hipsometria_regional.png" class="img-fluid figure-img" width="1200"></p>
+<figcaption>Hipsometria e curvas de nível (5 m) por regional.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+  <p class="doc-cap"><em>Figura 1. Hipsometria e curvas de nível (5 m) por regional.</em></p>
+
+  <div class="card">
+    <h3 class="anchored">Altitude média por regional — versão interativa</h3>
+    <div class="sub">Mesmo Modelo Digital de Elevação (MDE) da Figura 1, em ranking. Passe o cursor para conferir os valores.</div>
+    <div id="elev-rank"></div>
+    <p class="cap">Fonte: PBH/BHMap · curvas de nível 5 m, interpoladas via TIN (QGIS).</p>
+  </div>
+
+  <p class="doc-p">Belo Horizonte está inserida na Bacia do Rio das Velhas e é ladeada ao sul pela Serra do Curral, o relevo mais acidentado do município. Essa topografia se reflete na regional <strong>Barreiro</strong>, de maior altitude média, enquanto a regional <strong>Nordeste</strong> concentra as cotas mais baixas, ao longo dos principais vales fluviais (Figura 1). O relevo condiciona diretamente a rede hidrográfica municipal: os córregos Arrudas e Onça, os dois principais eixos de drenagem urbana, atravessam áreas historicamente mais densas e canalizadas, e o entorno imediato desses córregos, considerando uma faixa de 100 metros (Figura 2), concentra parte do risco recorrente de alagamento em eventos de chuva intensa.</p>
+
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="saidas/01_fisico_clima/figuras_e_tabelas/mapa_02_hidrografia_inundacao.png" class="img-fluid figure-img" width="1200"></p>
+<figcaption>Rede hidrográfica e zonas de risco de inundação (buffer 100 m dos córregos Arrudas e Onça).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+  <p class="doc-cap"><em>Figura 2. Rede hidrográfica e zonas de risco de inundação (buffer 100 m dos córregos Arrudas e Onça).</em></p>
+
+  <p class="doc-p">A Figura 2 detalha essa rede hidrográfica: o território municipal se divide em quatro bacias principais (Arrudas, Onça, Isidoro e Rio das Velhas), sendo as bacias do Arrudas e do Onça as que efetivamente drenam as áreas mais urbanizadas e populosas do município. Belo Horizonte convive historicamente com eventos recorrentes de alagamento nessas calhas, sobretudo em períodos de chuva intensa, e essa vulnerabilidade não é dissociada do tema central deste boletim: as mudanças climáticas que intensificam as ondas de calor também tendem a tornar os eventos de precipitação mais extremos e concentrados, ampliando a pressão sobre a drenagem urbana. A faixa de 100 metros ao longo dos córregos Arrudas e Onça atravessa múltiplas regionais administrativas, reforçando que o monitoramento de risco climático em Belo Horizonte (seja de calor, seja de inundação) precisa acompanhar a lógica física do território, e não apenas seus limites político-administrativos.</p>
+
+  <div class="basins">
+    <div class="basin"><span class="dot" style="background:#2B5B84"></span><div><div class="t">Arrudas</div><div class="d">Drena o eixo mais urbanizado e populoso; maior histórico de alagamento.</div></div></div>
+    <div class="basin"><span class="dot" style="background:#4A7C9E"></span><div><div class="t">Onça</div><div class="d">Atravessa regionais Norte e Nordeste; canalizada em trechos densos.</div></div></div>
+    <div class="basin"><span class="dot" style="background:#83A8C2"></span><div><div class="t">Isidoro</div><div class="d">Porção norte do município, frente de expansão urbana mais recente.</div></div></div>
+    <div class="basin"><span class="dot" style="background:#1B3A54"></span><div><div class="t">Rio das Velhas</div><div class="d">Recebe as demais bacias; contexto hidrográfico regional de BH.</div></div></div>
+  </div>
+
+  <p class="doc-p">A cobertura vegetal do município, formada pelos parques municipais somados às áreas verdes consolidadas pelo Programa BHVERDE (Figura 3), está distribuída de forma desigual entre as regionais: a regional <strong>Centro-Sul</strong> tem a maior proporção de área verde (<strong>12,82%</strong>), enquanto a regional <strong>Leste</strong> apresenta o maior déficit de arborização. O mesmo gradiente aparece no uso do solo (Figura 3): a mancha urbana oficial do IBGE ocupa <strong>100%</strong> da área da regional <strong>Noroeste</strong>, contra <strong>59,43%</strong> na regional <strong>Barreiro</strong>. Essa combinação de maior urbanização com menor cobertura vegetal tende a intensificar a ilha de calor urbana justamente nas regionais mais adensadas.</p>
+
+  <div class="doc-figs-row">
+    <div class="fig-col">
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="saidas/01_fisico_clima/figuras_e_tabelas/mapa_03_cobertura_vegetal.png" class="img-fluid figure-img" width="1200"></p>
+<figcaption>Cobertura vegetal ampliada por regional (parques municipais + Programa BHVERDE).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+      <p class="doc-cap"><em>Figura 3a. Cobertura vegetal ampliada por regional (parques municipais + Programa BHVERDE).</em></p>
+    </div>
+    <div class="fig-col">
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="saidas/01_fisico_clima/figuras_e_tabelas/mapa_04_uso_solo_regionais.png" class="img-fluid figure-img" width="1200"></p>
+<figcaption>Uso do solo — mancha urbana por regional (IBGE, 2015).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+      <p class="doc-cap"><em>Figura 3b. Uso do solo — mancha urbana por regional (IBGE, 2015).</em></p>
+    </div>
+  </div>
+
+  <p class="doc-p">O perfil climático de referência do município, obtido a partir das normais climatológicas do INMET para o período de 1991 a 2020, mostra sazonalidade marcada, com o trimestre mais chuvoso entre novembro e janeiro e a estação seca entre junho e agosto — dado já explorado em outra seção deste boletim. Esse padrão é característico do clima Tropical de Altitude, moldado pela própria Serra do Curral e pela atuação da Massa de Ar Tropical Atlântica na estação seca (Lucas et al., 2026). Como o relevo mais baixo e a menor cobertura vegetal coincidem espacialmente com as regionais mais urbanizadas, é razoável esperar que o aumento de dias extremos afete o território de forma desigual, sendo mais intenso onde a vegetação é mais escassa e a superfície mais impermeabilizada. O gráfico abaixo cruza essas duas variáveis territoriais — relevo e cobertura vegetal — para localizar onde essa exposição térmica potencial mais se concentra.</p>
+
+  <div class="card">
+    <h3 class="anchored">Perfil territorial de exposição térmica: relevo × cobertura vegetal</h3>
+    <div class="sub">Eixo horizontal: cobertura vegetal · Eixo vertical: altitude média · Cor: altitude média — regionais baixas e com pouca vegetação tendem a reter mais calor</div>
+    <svg class="chart" id="thermal-scatter" viewbox="0 0 680 380"></svg>
+    <div class="ramp-legend">
+      <span class="lo tab">785 m</span>
+      <div class="ramp-bar" style="background:linear-gradient(90deg,#2d7f36,#73b642,#dce65c,#f1ca3a,#e38d27,#c84318,#802200,#5a1836);"></div>
+      <span class="hi tab">1.139 m</span>
+    </div>
+    <p class="cap">Fontes: PBH/BHMap (cobertura vegetal), MDE via QGIS (altitude). A área sombreada no canto inferior esquerdo indica o quadrante de maior exposição territorial ao calor (baixo relevo + baixa vegetação); o canto superior direito, o de menor exposição.</p>
+  </div>
+
+  <div class="card">
+    <h3 class="anchored">Onde a sobreposição social-climática se concentra no território</h3>
+    <div class="sub">Índice ilustrativo (renda + cobertura vegetal, normalizadas e invertidas, 0–100) sobre os contornos reais das 9 regionais de Belo Horizonte</div>
+    <svg class="chart" id="bh-map" viewbox="0 0 404.8 560.0"></svg>
+    <div class="ramp-legend">
+      <span class="lo">Menor sobreposição</span>
+      <div class="ramp-bar" id="vuln-ramp-bar-2"></div>
+      <span class="hi">Maior sobreposição</span>
+    </div>
+    <p class="cap">Contornos administrativos: PBH/BHMap (camada REGIONAL, IDE-BHGEO), com o Hipercentro consolidado à regional Centro-Sul, seguindo o mesmo critério aplicado nos mapas de hipsometria do boletim. Índice construído para esta síntese (não é um indicador oficial da PBH/IBGE) — ver detalhamento na seção População. Passe o cursor sobre uma regional para os valores.</p>
+  </div>
+
+  <p class="doc-p">Os dois painéis acima sintetizam, em síntese territorial, um padrão já confirmado empiricamente em campo para Belo Horizonte: núcleos de aquecimento persistente concentrados no hipercentro e nas áreas mais adensadas e verticalizadas do município, com resfriamento mais efetivo nas proximidades da Serra do Curral e dos parques municipais mais arborizados (Assis &amp; Abreu, 2010). Ao sobrepor esse gradiente físico à distribuição de renda, o índice ilustrativo de sobreposição social-climática localiza onde a exposição ao calor coincide com menor capacidade de resposta da população, evidenciando que a desigualdade territorial de Belo Horizonte é também uma desigualdade climática. Essa leitura converge com o diagnóstico de áreas prioritárias para Soluções Baseadas na Natureza conduzido pela Prefeitura de Belo Horizonte em cooperação com o WRI Brasil (Cities4Forests, 2025), que recomenda direcionar novas infraestruturas verdes justamente às regiões que combinam maior perigo climático e maior vulnerabilidade socioeconômica; reduzindo, e não reproduzindo, as desigualdades urbanas existentes.</p>
+
+  <div class="refs">
+    <h4 class="anchored">Referências</h4>
+    <div class="ref-item">Arsad, F. S., Hod, R., Ahmad, N., Ismail, R., Mohamed, N., Baharom, M., Osman, Y., Radi, M., &amp; Tangang, F. (2022). The Impact of Heatwaves on Mortality and Morbidity and the Associated Vulnerability Factors: A Systematic Review. <em>International Journal of Environmental Research and Public Health</em>, 19. https://doi.org/10.3390/ijerph192316356</div>
+    <div class="ref-item">Assis, W. L., &amp; Abreu, M. L. de. (2010). O clima urbano de Belo Horizonte: análise têmporo-espacial do campo térmico e hígrico. <em>Revista de C. Humanas</em>, 10(1), 47–63.</div>
+    <div class="ref-item">Instituto Brasileiro de Geografia e Estatística (IBGE). Censo Demográfico 2022. Rio de Janeiro: IBGE, 2023.</div>
+    <div class="ref-item">Instituto Brasileiro de Geografia e Estatística (IBGE). Malhas de área urbanizada. Rio de Janeiro: IBGE, 2015. Acesso via pacote geobr (R).</div>
+    <div class="ref-item">Instituto Nacional de Meteorologia (INMET). Normais Climatológicas do Brasil 1991-2020. Disponível em: https://portal.inmet.gov.br/normais.</div>
+    <div class="ref-item">Liu, J., Varghese, B., Hansen, A., Zhang, Y., Driscoll, T. G., Morgan, G. G., Dear, K., Gourley, M., Capon, A., &amp; Bi, P. (2022). Heat exposure and cardiovascular health outcomes: a systematic review and meta-analysis. <em>The Lancet Planetary Health</em>, 6(6), e484-e495. https://doi.org/10.1016/s2542-5196(22)00117-6</div>
+    <div class="ref-item">Lucas, T. P. B., Magalhães, A. S., Ferreira, D. G., Camilo, G. A., Parajára, M. D. C., Menezes, F. C. D., ... &amp; Caiaffa, W. T. (2026). Definição de marcadores térmicos associados à mortalidade para um sistema de alerta de calor extremo em Belo Horizonte, Minas Gerais, Brasil. <em>Revista Brasileira de Epidemiologia</em>, 29, e260048.</div>
+    <div class="ref-item">National Oceanic and Atmospheric Administration (NOAA). Climate Prediction Center: El Niño/Southern Oscillation (ENSO) Diagnostic Discussion. 2026.</div>
+    <div class="ref-item">Observatório das Metrópoles. Censo 2022: Região Metropolitana de Belo Horizonte continua a 3ª maior do país, mesmo com perda de população da capital. 2023. Disponível em: https://www.observatoriodasmetropoles.net.br/.</div>
+    <div class="ref-item">Prefeitura de Belo Horizonte (PBH). BHMap, Infraestrutura de Dados Espaciais de Belo Horizonte (IDE-BHGEO). Disponível em: https://bhmap.pbh.gov.br/.</div>
+    <div class="ref-item">Prefeitura de Belo Horizonte (PBH). Programa BHVERDE. Portal de Dados Abertos. Disponível em: https://ckan.pbh.gov.br/.</div>
+    <div class="ref-item">Silveira, I., Cortes, T., Bell, M., &amp; Junger, W. (2023). Effects of heat waves on cardiovascular and respiratory mortality in Rio de Janeiro, Brazil. <em>PLOS ONE</em>, 18. https://doi.org/10.1371/journal.pone.0283899</div>
+    <div class="ref-item">Uibel, D., Sharma, R., Piontkowski, D., Sheffield, P., &amp; Clougherty, J. (2022). Association of Ambient Extreme Heat with Pediatric Morbidity: A Scoping Review. <em>International Journal of Biometeorology</em>, 66, 1683-1698. https://doi.org/10.1007/s00484-022-02310-5</div>
+    <div class="ref-item">WRI Brasil; Cities4Forests; Prefeitura de Belo Horizonte. (2025). <em>Análise de áreas prioritárias para implementação de SbN em Belo Horizonte/MG</em> — Relatório Final. Versa Urbanismo, Paisagismo e Arquitetura.</div>
+  </div>
+
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="col">
+<p class="doc-p">Belo Horizonte ocupa uma área territorial de <strong>331,337 km²</strong> (IBGE, 2025) e tinha, segundo o Censo Demográfico 2022, <strong>2.315.560</strong> habitantes, o que a torna a sexta capital mais populosa do país, com uma densidade demográfica municipal de <strong>6.988,18 hab./km²</strong>. A estimativa populacional do IBGE para 2026 aponta um crescimento para <strong>2.415.451</strong> pessoas, o que mantém a pressão sobre a infraestrutura urbana e os serviços públicos, incluindo os de saúde. Essa população, porém, está distribuída de forma desigual entre as Regionais administrativas do município: a regional <strong>Oeste</strong> concentra o maior número de moradores, com <strong>309.118</strong> habitantes, enquanto a regional <strong>Norte</strong> é a menos populosa (Figura 1). Quando o critério passa a ser a densidade demográfica por regional, e não o total de moradores, o mapa se reorganiza: a regional <strong>Oeste</strong> é a mais adensada, o que amplia sua exposição a ilhas de calor urbanas e concentra a demanda por serviços públicos de saúde num território relativamente menor (Figura 2).</p>
+
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="saidas/02_populacao_clima/figuras_e_tabelas/mapa_01_populacao_regional.png" class="img-fluid figure-img" width="1200"></p>
+<figcaption>População residente por regional (Censo 2022).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+  <p class="doc-cap"><em>Figura 1. População residente por regional — Censo 2022.</em></p>
+
+  <div class="doc-note">Figuras 2 (densidade demográfica) e 3 (renda média domiciliar) por regional, geradas pelo script R, ainda não foram incluídas aqui como mapas estáticos — ver nota ao final desta seção. Enquanto essa decisão não é tomada, as duas variáveis podem ser exploradas de forma interativa no gráfico de síntese logo abaixo, que reúne população, renda, cobertura vegetal e altitude num único painel.</div>
+
+  <p class="doc-p">Essa distribuição populacional não é neutra do ponto de vista climático: bairros mais densos e mais pobres tendem a concentrar menos áreas verdes e mais superfícies impermeabilizadas, o que intensifica localmente as temperaturas e reduz a capacidade de dissipação do calor à noite. Na regional <strong>Norte</strong>, onde a renda média domiciliar é a mais baixa do município (<strong>R$ 2.494,40</strong>), a cobertura vegetal também está entre as mais baixas (<strong>0,9%</strong>), o que sugere uma sobreposição entre vulnerabilidade socioeconômica e exposição ambiental ao calor (Figura 3). Esse padrão é consistente com a literatura internacional sobre justiça climática urbana, que associa bairros de menor renda a maior exposição a temperaturas extremas, tanto pela menor cobertura arbórea quanto pela maior densidade construtiva (Harlan et al., 2006; Klopfer e Pfeiffer, 2023). Comunidades mais pobres geralmente têm menos recursos ambientais, menos opções privadas de refrigeração e menos influência sobre as decisões de planejamento urbano, o que pode agravar o risco à saúde durante ondas de calor (Harlan et al., 2006). A Figura 4 reúne população, renda e cobertura vegetal numa síntese por regional, evidenciando como essas três dimensões se sobrepõem no território de Belo Horizonte.</p>
+
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="saidas/02_populacao_clima/figuras_e_tabelas/figura_01_sintese_populacional_bh.png" class="img-fluid figure-img" width="1650"></p>
+<figcaption>Síntese populacional por regional (população, renda, cobertura vegetal).</figcaption>
+</figure>
+</div>
+</div>
+</div>
+  <p class="doc-cap"><em>Figura 4. Síntese populacional por regional — cobertura vegetal (%), população (hab.) e renda média domiciliar (R$).</em></p>
+
+  <div class="card">
+    <h3 class="anchored">Renda, cobertura vegetal, população e altitude — versão interativa</h3>
+    <div class="sub">Eixo horizontal: renda média domiciliar · Eixo vertical: cobertura vegetal · Tamanho: população · Cor: altitude média</div>
+    <svg class="chart" id="bubble-chart" viewbox="0 0 720 430"></svg>
+    <div class="ramp-legend">
+      <span class="lo tab">785 m</span>
+      <div class="ramp-bar" style="background:linear-gradient(90deg,#2d7f36,#73b642,#dce65c,#f1ca3a,#e38d27,#c84318,#802200,#5a1836);"></div>
+      <span class="hi tab">1.139 m</span>
+    </div>
+    <div class="size-legend">
+      <div class="sl"><svg width="34" height="34"><circle cx="17" cy="17" r="9"></circle></svg><span class="sl-l">≈213 mil hab.</span></div>
+      <div class="sl"><svg width="34" height="34"><circle cx="17" cy="17" r="15"></circle></svg><span class="sl-l">≈309 mil hab.</span></div>
+    </div>
+    <p class="cap">Fontes: IBGE (Censo 2022), PBH/BHMap (renda, cobertura vegetal), MDE via QGIS (altitude). Passe o cursor sobre cada bolha para os valores exatos.</p>
+  </div>
+
+  <div class="card">
+    <h3 class="anchored">Índice ilustrativo de sobreposição social-climática</h3>
+    <div class="sub">Combina renda média domiciliar e cobertura vegetal, normalizadas e invertidas (0–100) — quanto maior, maior a sobreposição de baixa renda e baixa vegetação</div>
+    <div id="vbars" style="margin-top:14px;"></div>
+    <div class="ramp-legend" style="margin-top:6px;">
+      <span class="lo">Menor sobreposição</span>
+      <div class="ramp-bar" id="vuln-ramp-bar"></div>
+      <span class="hi">Maior sobreposição</span>
+    </div>
+    <p class="cap">Índice construído para esta síntese (não é um indicador oficial da PBH/IBGE): média simples de renda invertida e cobertura vegetal invertida, cada uma normalizada entre a regional de menor e maior valor observado. A versão territorial deste índice, sobre os contornos reais das regionais, está na seção Geografia. Passe o cursor para ver os valores brutos.</p>
+  </div>
+
+  <div class="closing">
+    <p class="doc-p">Em síntese, os dados de população, renda e cobertura vegetal por regional (Figura 4) revelam uma sobreposição entre vulnerabilidade social e risco climático à saúde: as regionais com menor renda média (caso de Norte, Nordeste e Venda Nova) também apresentam menor cobertura vegetal e concentram parte expressiva da população municipal, o que amplia o contingente exposto a estresse térmico e a riscos à saúde durante ondas de calor. Do ponto de vista do planejamento urbano e da saúde pública, essa sobreposição indica que políticas de arborizações e de infraestrutura verde em Belo Horizonte não podem ser tratadas apenas como intervenção ambiental, mas como medida de equidade climática, priorizando as regionais onde a vulnerabilidade social e exposição térmica mais se acumulam.</p>
+  </div>
+
+  <div class="refs">
+    <h4 class="anchored">Referências</h4>
+    <div class="ref-item">Harlan, S. L., Brazel, A. J., Prashad, L., Stefanov, W. L., &amp; Larsen, L. (2006). Neighborhood microclimates and vulnerability to heat stress. <em>Social Science &amp; Medicine</em>, 63(11), 2847-2863. https://doi.org/10.1016/j.socscimed.2006.07.030</div>
+    <div class="ref-item">Instituto Brasileiro de Geografia e Estatística (IBGE). Censo Demográfico 2022. Rio de Janeiro: IBGE, 2023.</div>
+    <div class="ref-item">Instituto Brasileiro de Geografia e Estatística (IBGE). Cidades@: Belo Horizonte — Panorama (área territorial, densidade demográfica, população estimada 2026). Disponível em: https://cidades.ibge.gov.br/brasil/mg/belo-horizonte/panorama.</div>
+    <div class="ref-item">Klopfer, F., &amp; Pfeiffer, D. (2023). [CONFERIR ESTA REFERÊNCIA — não foi possível localizar/confirmar esta publicação numa busca; confirme título, periódico e DOI antes de manter no boletim, ou substitua/remova a citação no texto acima].</div>
+    <div class="ref-item">Prefeitura de Belo Horizonte (PBH). População e Domicílios por Regional, Censo 2022. Portal de Dados Abertos / BHMap. Disponível em: https://ckan.pbh.gov.br/.</div>
+    <div class="ref-item">Uibel, D., Sharma, R., Piontkowski, D., Sheffield, P., &amp; Clougherty, J. (2022). Association of Ambient Extreme Heat with Pediatric Morbidity: A Scoping Review. <em>International Journal of Biometeorology</em>, 66, 1683-1698. https://doi.org/10.1007/s00484-022-02310-5</div>
+  </div>
+
+  <div class="doc-note">Nota: a seção de População foi planejada para usar apenas 2 figuras no boletim final (um mapa + o gráfico de síntese), mas os mapas de densidade e de renda também podem ser gerados pelo script. Verifique qual dos três mapas (população, densidade ou renda) deve ser o mapa único escolhido, caso a Figura 1 (população) não seja a preferida — o mapa interativo de sobreposição social-climática, por ser territorial, foi priorizado na seção Geografia. Os mapas possuem respiro nas quatro bordas que o ggplot2 adiciona por padrão; isso pode ser modificado se necessário.</div>
+
+</div>
+</div>
+</div>
+</div>
+<div id="tooltip"></div>
+<script>
+(function(){
+  "use strict";
+
+  var regioes = [
+    {nome:"Barreiro",    elevacao:1139, populacao:278144, renda:2543.73,  vegetacao:0.75},
+    {nome:"Centro-Sul",  elevacao:1123, populacao:248224, renda:10031.48, vegetacao:11.93},
+    {nome:"Leste",       elevacao:1000, populacao:220694, renda:4138.86,  vegetacao:0.24},
+    {nome:"Nordeste",    elevacao:785,  populacao:293612, renda:3490.35,  vegetacao:1.68},
+    {nome:"Noroeste",    elevacao:898,  populacao:233656, renda:4006.95,  vegetacao:0.60},
+    {nome:"Norte",       elevacao:786,  populacao:213427, renda:2494.42,  vegetacao:0.92},
+    {nome:"Oeste",       elevacao:1017, populacao:309118, renda:5333.63,  vegetacao:3.13},
+    {nome:"Pampulha",    elevacao:849,  populacao:247578, renda:5551.38,  vegetacao:5.55},
+    {nome:"Venda Nova",  elevacao:829,  populacao:247315, renda:2522.56,  vegetacao:0.28}
+  ];
+
+  var fmtInt = function(n){ return Math.round(n).toLocaleString('pt-BR'); };
+  var fmtMoney = function(n){ return 'R$ ' + n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); };
+  var fmtPct = function(n){ return n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}) + '%'; };
+
+  var tooltip = document.getElementById('tooltip');
+  function showTip(x,y,html){
+    tooltip.innerHTML = html;
+    tooltip.style.left = x + 'px';
+    tooltip.style.top = (y - 12) + 'px';
+    tooltip.style.opacity = '1';
+  }
+  function hideTip(){ tooltip.style.opacity = '0'; }
+
+  /* ---------- tabs: real page switching ---------- */
+  (function(){
+    var btns = Array.prototype.slice.call(document.querySelectorAll('.tab-btn'));
+    var pages = Array.prototype.slice.call(document.querySelectorAll('.page'));
+    btns.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        btns.forEach(function(b){ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+        pages.forEach(function(p){ p.hidden = true; });
+        btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+        var tgt = document.getElementById(btn.dataset.target);
+        if(tgt) tgt.hidden = false;
+        window.scrollTo({top:0, behavior:'instant'});
+      });
+    });
+  })();
+
+  /* ---------- color ramp interpolation ---------- */
+  function hexToRgb(h){ h=h.replace('#',''); return [parseInt(h.substr(0,2),16),parseInt(h.substr(2,2),16),parseInt(h.substr(4,2),16)]; }
+  function rgbToHex(r,g,b){ return '#'+[r,g,b].map(function(v){ v=Math.max(0,Math.min(255,Math.round(v))); var s=v.toString(16); return s.length<2?'0'+s:s; }).join(''); }
+  function rampColor(stops,t){
+    t = Math.max(0,Math.min(1,t));
+    var n = stops.length-1;
+    var seg = Math.min(n-1, Math.floor(t*n));
+    var localT = (t*n) - seg;
+    var c0 = hexToRgb(stops[seg]), c1 = hexToRgb(stops[seg+1]);
+    return rgbToHex(
+      c0[0]+(c1[0]-c0[0])*localT,
+      c0[1]+(c1[1]-c0[1])*localT,
+      c0[2]+(c1[2]-c0[2])*localT
+    );
+  }
+  var elevRamp = ["#2d7f36","#73b642","#dce65c","#f1ca3a","#e38d27","#c84318","#802200","#5a1836"];
+  var vulnRamp = ["#F7E4DC","#EFC7B6","#E1A188","#CE7856","#B7472A","#7E3018"];
+  var vulnGradient = 'linear-gradient(90deg,'+vulnRamp.join(',')+')';
+  var vrb1 = document.getElementById('vuln-ramp-bar');
+  var vrb2 = document.getElementById('vuln-ramp-bar-2');
+  if(vrb1) vrb1.style.background = vulnGradient;
+  if(vrb2) vrb2.style.background = vulnGradient;
+
+  /* ---------- shared vulnerability index (used by bars + map) ---------- */
+  function computeVulnIndex(){
+    var incomes = regioes.map(function(r){ return r.renda; });
+    var vegs = regioes.map(function(r){ return r.vegetacao; });
+    var incMin = Math.min.apply(null,incomes), incMax = Math.max.apply(null,incomes);
+    var vegMin = Math.min.apply(null,vegs), vegMax = Math.max.apply(null,vegs);
+    var byName = {};
+    var list = regioes.map(function(r){
+      var incScore = (incMax-r.renda)/(incMax-incMin);
+      var vegScore = (vegMax-r.vegetacao)/(vegMax-vegMin);
+      var idx = (incScore+vegScore)/2*100;
+      var d = {nome:r.nome, renda:r.renda, vegetacao:r.vegetacao, idx:idx};
+      byName[r.nome.toUpperCase()] = d;
+      return d;
+    });
+    return {list:list, byName:byName};
+  }
+  var vulnIndex = computeVulnIndex();
+
+  /* ---------- BH regional boundaries (PBH/BHMap, Hipercentro fundido ao Centro-Sul) ---------- */
+  var bhPaths = {
+    "BARREIRO": "M 127.22,344.61 L 125.43,344.45 L 122.00,344.98 L 117.38,344.45 L 116.03,344.78 L 114.85,345.63 L 113.95,347.16 L 113.81,349.13 L 114.54,350.65 L 117.11,353.09 L 115.63,354.38 L 117.47,356.60 L 117.70,357.53 L 117.49,358.29 L 115.74,360.36 L 116.93,364.54 L 116.32,366.17 L 115.06,368.26 L 112.84,370.38 L 111.10,371.03 L 107.27,370.99 L 102.50,373.29 L 98.32,374.13 L 97.26,375.04 L 95.63,375.76 L 94.08,378.13 L 91.27,379.22 L 90.84,379.78 L 90.78,380.70 L 88.88,380.78 L 87.29,381.55 L 86.11,382.91 L 84.82,386.54 L 81.46,392.05 L 80.32,393.26 L 78.87,394.08 L 76.40,394.38 L 73.96,393.46 L 74.27,392.80 L 74.15,392.35 L 63.33,379.72 L 63.23,378.72 L 63.96,378.30 L 63.98,377.78 L 59.97,376.97 L 56.87,375.49 L 54.51,375.13 L 52.02,375.73 L 49.39,375.74 L 48.41,376.80 L 46.88,377.87 L 44.12,378.64 L 34.59,376.75 L 33.60,379.85 L 34.63,380.17 L 33.94,382.41 L 34.82,381.45 L 37.16,380.95 L 38.22,381.37 L 39.33,382.56 L 40.77,385.76 L 43.00,388.54 L 43.17,389.58 L 42.97,390.35 L 43.37,390.86 L 43.59,392.06 L 43.20,393.37 L 44.04,394.04 L 44.41,395.91 L 45.48,397.17 L 46.06,399.75 L 45.88,400.24 L 45.23,400.80 L 44.86,402.04 L 45.01,404.19 L 43.85,405.47 L 45.05,405.72 L 45.55,406.27 L 45.87,407.70 L 45.68,408.80 L 46.95,411.15 L 46.69,412.69 L 47.10,414.50 L 46.83,415.69 L 48.29,416.15 L 48.75,416.69 L 49.16,417.66 L 49.08,418.87 L 50.04,417.99 L 51.17,417.67 L 52.89,418.38 L 53.80,418.34 L 54.65,417.80 L 56.22,417.57 L 57.95,418.52 L 58.67,419.29 L 58.60,421.25 L 59.77,423.24 L 60.41,423.63 L 61.65,423.71 L 61.68,424.85 L 63.22,428.48 L 63.66,430.50 L 67.75,434.46 L 68.18,436.49 L 70.13,438.37 L 70.85,439.42 L 70.95,441.44 L 70.63,443.31 L 71.58,444.69 L 71.62,446.28 L 73.77,448.83 L 73.60,449.98 L 73.01,450.85 L 74.92,452.18 L 76.82,454.56 L 77.15,455.94 L 77.04,459.33 L 77.25,459.89 L 80.88,460.33 L 82.73,461.12 L 85.35,461.69 L 85.76,462.30 L 85.75,464.04 L 86.46,465.55 L 87.12,465.91 L 87.87,466.85 L 88.99,467.17 L 90.99,470.34 L 92.53,472.18 L 94.88,472.72 L 94.56,473.98 L 96.03,475.86 L 98.29,476.90 L 100.25,478.72 L 101.63,478.88 L 103.31,479.82 L 103.71,481.01 L 104.39,481.50 L 106.02,481.49 L 106.69,481.78 L 107.81,481.15 L 108.10,481.25 L 108.54,482.30 L 108.26,483.65 L 109.59,485.12 L 111.67,485.48 L 112.14,485.98 L 112.87,485.33 L 113.68,485.50 L 116.68,487.61 L 117.40,488.65 L 119.06,489.58 L 119.29,490.49 L 119.59,490.52 L 119.75,490.91 L 120.69,490.84 L 120.18,492.88 L 120.66,493.08 L 121.10,492.87 L 121.64,493.22 L 121.56,494.41 L 122.01,495.48 L 121.55,496.26 L 120.65,496.99 L 119.81,498.44 L 119.61,499.39 L 119.94,500.15 L 119.20,501.35 L 118.50,502.24 L 118.17,502.23 L 117.83,501.72 L 117.56,502.17 L 116.48,502.64 L 115.92,504.15 L 114.42,504.19 L 112.84,505.21 L 110.96,507.39 L 108.67,509.17 L 107.75,510.90 L 108.42,512.34 L 108.12,513.11 L 108.46,514.87 L 107.30,517.39 L 109.73,519.04 L 110.63,520.67 L 112.49,522.48 L 114.40,523.73 L 115.86,525.88 L 116.81,526.40 L 123.52,525.46 L 124.17,524.96 L 125.22,524.74 L 125.70,524.05 L 128.03,523.35 L 129.53,523.60 L 131.19,523.27 L 132.60,523.65 L 133.45,522.06 L 133.57,519.86 L 133.87,518.79 L 135.11,516.95 L 135.76,515.41 L 136.66,514.37 L 138.66,513.51 L 139.61,512.50 L 139.27,511.75 L 138.71,511.42 L 137.91,510.32 L 137.57,509.12 L 137.63,508.15 L 139.52,504.86 L 140.47,504.15 L 141.46,502.65 L 142.87,501.48 L 143.04,500.50 L 142.17,499.76 L 139.24,499.31 L 138.02,498.32 L 137.92,497.88 L 139.81,495.84 L 139.48,495.03 L 140.20,492.10 L 139.85,490.67 L 140.57,489.02 L 143.77,485.64 L 144.73,483.75 L 147.02,482.51 L 148.09,481.49 L 148.44,479.61 L 149.40,477.70 L 149.23,476.48 L 148.24,474.92 L 148.93,473.88 L 150.04,473.00 L 150.82,472.82 L 151.89,473.02 L 153.64,472.35 L 154.92,471.48 L 155.30,470.87 L 155.50,468.80 L 158.11,467.29 L 159.23,465.44 L 159.92,462.54 L 161.73,461.08 L 162.08,460.08 L 162.04,459.30 L 162.41,458.73 L 164.41,456.96 L 164.37,454.28 L 164.81,452.73 L 164.23,451.16 L 165.34,450.52 L 165.67,449.76 L 166.51,449.24 L 167.89,447.00 L 169.55,446.42 L 171.47,444.09 L 172.63,443.50 L 174.98,441.55 L 175.94,439.99 L 177.25,438.64 L 177.57,437.83 L 179.23,437.34 L 180.95,436.27 L 182.61,436.11 L 184.15,435.40 L 184.98,434.60 L 186.54,433.87 L 187.98,432.43 L 190.05,431.67 L 192.81,429.04 L 194.67,428.63 L 194.57,426.76 L 195.14,424.77 L 200.22,417.20 L 201.01,413.82 L 200.90,411.22 L 199.55,408.41 L 198.46,407.46 L 196.26,406.89 L 189.00,407.50 L 186.64,407.12 L 185.46,406.28 L 183.80,403.67 L 182.56,402.37 L 169.86,395.77 L 166.37,393.70 L 165.88,392.99 L 163.84,387.68 L 161.77,386.21 L 158.04,384.66 L 157.00,383.74 L 156.18,381.81 L 155.11,377.40 L 151.97,372.43 L 149.12,369.32 L 142.85,364.18 L 140.90,361.95 L 132.41,346.33 L 127.22,344.61 Z",
+    "CENTRO-SUL": "M 250.56,271.49 L 253.83,272.18 L 261.72,285.63 L 270.23,287.78 L 268.32,295.38 L 278.74,298.10 L 281.15,299.55 L 282.29,298.48 L 282.27,299.29 L 281.78,300.39 L 281.84,301.13 L 282.84,302.22 L 283.02,303.91 L 285.12,300.12 L 286.73,299.89 L 286.36,298.84 L 287.32,298.55 L 287.52,299.13 L 292.64,298.72 L 292.89,298.11 L 296.25,297.40 L 298.11,295.56 L 298.28,295.70 L 297.88,296.14 L 298.57,298.23 L 298.37,298.42 L 297.79,298.25 L 297.63,298.80 L 297.41,298.75 L 296.93,299.34 L 295.99,299.28 L 295.71,300.17 L 295.93,303.20 L 296.47,303.19 L 296.72,303.73 L 296.52,304.54 L 297.08,307.08 L 298.13,309.56 L 297.62,312.64 L 299.02,315.76 L 298.32,315.66 L 298.91,317.90 L 296.05,317.89 L 294.13,319.55 L 290.92,321.23 L 292.21,322.25 L 293.24,321.20 L 294.08,321.04 L 295.83,319.67 L 296.66,319.83 L 298.25,319.33 L 301.28,319.21 L 303.17,318.14 L 304.90,317.67 L 306.22,319.08 L 305.69,319.89 L 305.94,321.44 L 306.71,322.34 L 308.21,322.75 L 310.23,322.44 L 310.84,323.08 L 312.78,323.32 L 312.97,323.68 L 312.30,324.84 L 313.09,325.64 L 314.68,325.31 L 315.92,324.59 L 316.80,324.76 L 317.18,325.43 L 315.41,326.51 L 315.01,327.01 L 313.96,327.43 L 312.58,328.59 L 311.15,328.02 L 310.83,328.12 L 310.59,329.89 L 309.78,330.54 L 310.03,331.17 L 309.73,332.44 L 308.46,333.29 L 308.33,335.00 L 307.20,335.82 L 305.71,337.69 L 304.61,338.08 L 303.80,337.98 L 300.67,339.99 L 299.77,339.72 L 298.74,340.12 L 298.17,341.22 L 297.35,341.94 L 297.22,342.87 L 296.04,343.57 L 295.29,345.08 L 292.63,346.63 L 290.97,346.81 L 290.69,347.39 L 289.50,348.05 L 288.06,349.73 L 287.75,350.74 L 286.99,351.44 L 286.71,352.19 L 284.86,353.32 L 284.26,354.21 L 283.28,354.83 L 281.31,355.26 L 280.24,356.25 L 277.06,357.24 L 275.23,359.37 L 271.63,360.85 L 270.67,362.40 L 268.87,362.58 L 267.97,363.43 L 267.23,363.45 L 265.95,364.40 L 263.60,365.45 L 261.85,367.15 L 259.58,368.75 L 256.61,369.76 L 256.09,370.51 L 253.60,371.75 L 252.28,371.93 L 251.04,373.77 L 250.41,375.47 L 248.26,375.14 L 247.05,375.94 L 246.55,376.95 L 246.48,378.27 L 245.52,380.14 L 243.77,379.56 L 242.94,379.02 L 242.23,378.10 L 240.99,377.89 L 239.55,378.13 L 238.64,378.64 L 238.21,379.31 L 237.55,379.35 L 235.03,380.74 L 231.40,384.20 L 230.86,385.31 L 229.81,385.73 L 228.53,387.34 L 227.94,388.39 L 227.81,389.22 L 224.69,391.86 L 224.10,393.53 L 222.27,391.07 L 222.06,389.57 L 223.70,383.61 L 225.30,379.31 L 225.03,378.37 L 226.37,374.69 L 224.81,374.19 L 218.71,373.35 L 214.21,371.61 L 212.73,370.45 L 212.02,368.62 L 212.24,368.36 L 212.06,367.20 L 212.39,363.99 L 212.19,362.78 L 211.17,361.06 L 207.88,356.96 L 207.28,355.79 L 206.91,352.67 L 207.67,349.64 L 207.39,348.13 L 203.53,342.09 L 201.50,338.15 L 200.76,336.16 L 200.88,333.99 L 201.31,332.36 L 201.79,331.65 L 204.21,329.34 L 207.87,326.77 L 208.14,325.84 L 208.16,323.85 L 208.59,323.10 L 209.43,322.57 L 211.58,322.10 L 212.76,321.00 L 212.73,317.24 L 213.77,311.45 L 215.38,307.76 L 213.21,307.15 L 207.96,301.24 L 205.39,293.48 L 208.52,281.28 L 208.39,280.88 L 208.93,280.38 L 211.33,279.35 L 211.74,277.65 L 213.61,277.52 L 220.87,278.68 L 222.94,278.48 L 224.78,277.38 L 228.85,272.62 L 233.76,269.66 L 235.01,269.21 L 237.12,269.33 L 241.25,271.11 L 246.28,271.32 L 247.42,272.18 L 247.84,273.01 L 250.56,271.49 Z",
+    "LESTE": "M 285.03,207.21 L 279.71,213.35 L 275.69,219.59 L 272.18,223.59 L 269.77,229.33 L 266.63,235.48 L 265.83,236.47 L 264.53,237.21 L 262.26,237.33 L 258.59,238.38 L 256.98,239.74 L 256.20,240.90 L 254.74,250.72 L 254.11,252.23 L 252.86,253.20 L 251.86,253.59 L 240.92,257.31 L 239.74,258.22 L 238.83,259.49 L 238.86,259.92 L 239.45,260.45 L 239.18,260.77 L 239.94,260.78 L 238.83,262.13 L 238.22,261.93 L 233.46,262.34 L 235.72,264.88 L 235.95,265.54 L 234.92,267.11 L 233.91,266.61 L 233.13,265.78 L 233.71,266.93 L 235.14,267.86 L 236.39,269.14 L 240.59,270.98 L 246.28,271.32 L 247.42,272.18 L 247.84,273.01 L 250.78,271.46 L 253.83,272.18 L 261.72,285.63 L 270.23,287.78 L 268.32,295.38 L 278.74,298.10 L 281.15,299.55 L 282.29,298.48 L 282.27,299.29 L 281.78,300.39 L 281.84,301.13 L 282.84,302.22 L 283.02,303.91 L 285.12,300.12 L 286.73,299.89 L 286.36,298.84 L 287.32,298.55 L 287.52,299.13 L 292.64,298.72 L 292.89,298.11 L 296.25,297.40 L 298.11,295.56 L 298.28,295.70 L 297.88,296.14 L 298.57,298.23 L 298.37,298.42 L 297.79,298.25 L 297.63,298.80 L 297.41,298.75 L 296.93,299.34 L 295.99,299.28 L 295.71,300.17 L 295.93,303.20 L 296.47,303.19 L 296.72,303.73 L 296.52,304.54 L 297.08,307.08 L 298.13,309.56 L 297.62,312.64 L 299.02,315.76 L 298.32,315.66 L 298.91,317.90 L 296.05,317.89 L 294.13,319.55 L 290.92,321.23 L 292.21,322.25 L 293.24,321.20 L 294.08,321.04 L 295.83,319.67 L 296.66,319.83 L 298.25,319.33 L 301.28,319.21 L 303.17,318.14 L 304.90,317.67 L 306.22,319.08 L 305.69,319.89 L 305.94,321.44 L 306.71,322.34 L 308.21,322.75 L 310.23,322.44 L 310.84,323.08 L 312.78,323.32 L 312.97,323.68 L 312.30,324.84 L 313.09,325.64 L 314.68,325.31 L 315.92,324.59 L 316.80,324.76 L 317.19,325.35 L 312.58,328.59 L 311.15,328.02 L 310.83,328.12 L 310.59,329.89 L 309.78,330.54 L 310.02,331.16 L 311.09,330.53 L 311.93,330.84 L 312.59,329.79 L 313.97,329.37 L 315.08,328.66 L 315.93,328.60 L 316.91,329.30 L 318.00,329.43 L 318.32,329.13 L 318.27,328.10 L 318.79,326.91 L 318.90,325.01 L 319.66,324.18 L 320.03,322.03 L 320.80,320.65 L 321.25,320.44 L 322.28,320.53 L 323.65,321.41 L 324.85,321.04 L 325.71,320.17 L 326.07,319.38 L 325.73,318.99 L 325.66,318.29 L 326.40,317.26 L 326.08,316.61 L 326.17,316.14 L 328.35,315.19 L 329.36,313.89 L 330.65,312.95 L 332.05,312.92 L 332.72,313.86 L 334.48,313.51 L 335.30,312.53 L 336.05,310.63 L 338.61,308.81 L 339.15,307.63 L 339.94,307.30 L 341.18,305.43 L 343.85,303.13 L 344.15,302.10 L 345.13,301.98 L 346.90,299.44 L 348.20,298.98 L 348.23,298.35 L 350.61,296.84 L 350.38,293.48 L 351.27,292.94 L 351.52,291.29 L 351.22,290.33 L 350.07,289.09 L 350.01,288.05 L 349.52,286.60 L 349.79,285.86 L 349.54,283.78 L 348.95,282.38 L 349.00,281.97 L 347.86,280.94 L 346.97,280.31 L 346.06,280.61 L 345.38,279.60 L 344.34,279.30 L 343.96,278.53 L 342.94,278.01 L 342.82,277.17 L 341.76,275.79 L 341.56,274.80 L 341.17,274.50 L 340.99,273.87 L 340.23,273.37 L 339.54,273.58 L 339.18,273.41 L 339.05,271.81 L 339.63,271.23 L 338.93,269.32 L 339.62,268.19 L 339.63,267.70 L 337.28,265.48 L 336.03,264.76 L 335.77,264.11 L 335.08,264.20 L 334.74,263.52 L 333.74,263.18 L 334.09,262.39 L 332.31,261.78 L 332.17,261.46 L 332.55,261.14 L 332.28,259.49 L 330.56,259.52 L 330.80,259.15 L 330.74,257.52 L 331.08,257.34 L 330.55,256.77 L 330.48,256.20 L 331.27,254.55 L 331.37,253.63 L 331.74,253.25 L 331.60,252.40 L 331.91,251.48 L 331.33,250.75 L 328.33,251.25 L 327.08,250.97 L 327.37,250.30 L 326.44,248.43 L 326.66,247.99 L 326.43,247.39 L 326.80,246.96 L 325.84,246.30 L 324.95,244.60 L 325.02,243.98 L 325.32,243.68 L 324.49,241.89 L 324.47,240.90 L 324.07,240.37 L 324.64,239.52 L 324.19,237.51 L 323.98,236.93 L 322.78,235.79 L 322.42,234.84 L 321.77,234.55 L 320.63,235.95 L 319.70,236.41 L 318.41,236.23 L 317.84,235.64 L 317.66,233.29 L 316.91,231.94 L 316.34,229.08 L 316.89,226.56 L 316.37,224.78 L 315.65,224.23 L 314.11,224.53 L 312.60,226.73 L 311.13,226.94 L 310.07,226.41 L 308.52,226.29 L 307.99,223.86 L 307.43,223.27 L 305.69,223.13 L 304.62,223.77 L 303.42,223.61 L 301.36,222.66 L 298.63,222.70 L 298.20,222.47 L 297.76,222.65 L 296.14,222.26 L 295.11,223.59 L 294.69,224.69 L 293.14,224.08 L 291.60,224.60 L 290.48,221.00 L 287.75,219.16 L 288.44,217.65 L 287.27,214.62 L 287.77,212.02 L 286.72,209.61 L 285.03,207.21 Z",
+    "NORDESTE": "M 339.26,97.04 L 337.54,99.76 L 335.44,101.09 L 335.57,102.63 L 334.80,107.41 L 331.90,108.86 L 332.42,109.96 L 333.55,110.94 L 335.32,111.83 L 335.01,112.58 L 333.77,114.03 L 332.53,114.41 L 330.60,114.37 L 329.70,114.77 L 327.46,111.93 L 326.73,111.77 L 325.61,112.10 L 321.55,111.29 L 319.68,111.40 L 317.56,112.40 L 315.14,112.93 L 306.01,112.30 L 304.38,112.67 L 301.48,111.03 L 300.64,109.38 L 300.17,109.25 L 299.90,109.48 L 298.45,111.15 L 298.39,113.30 L 299.38,114.21 L 299.21,114.96 L 298.51,115.68 L 296.47,116.84 L 294.70,116.37 L 293.29,117.77 L 293.10,118.47 L 293.34,119.89 L 293.83,121.00 L 295.13,122.37 L 295.30,123.01 L 295.78,123.02 L 296.06,123.37 L 297.77,127.78 L 296.93,128.66 L 296.27,130.18 L 294.65,132.17 L 292.27,132.99 L 290.79,133.91 L 289.96,136.16 L 290.06,137.51 L 291.20,138.42 L 291.63,139.17 L 291.61,142.49 L 291.89,143.02 L 292.81,143.71 L 293.00,145.34 L 293.82,145.98 L 294.87,146.14 L 295.90,145.59 L 296.72,145.50 L 297.22,145.91 L 297.75,147.15 L 297.42,148.09 L 295.70,149.14 L 293.57,148.74 L 293.13,149.17 L 291.34,149.28 L 290.56,149.01 L 288.22,147.25 L 287.37,148.19 L 287.20,150.22 L 287.57,150.79 L 286.96,151.72 L 284.03,151.99 L 283.39,151.75 L 283.17,151.36 L 282.81,151.46 L 281.76,152.38 L 280.94,154.01 L 278.82,154.21 L 277.70,154.64 L 270.04,159.72 L 268.94,161.21 L 264.27,170.02 L 261.61,176.97 L 261.05,179.57 L 258.06,181.73 L 256.28,184.56 L 255.84,186.56 L 256.18,187.22 L 249.61,190.38 L 244.36,191.66 L 230.03,196.00 L 224.63,196.72 L 223.16,197.69 L 221.61,199.96 L 220.26,202.51 L 219.10,206.04 L 215.54,210.85 L 218.16,219.13 L 218.05,220.37 L 217.00,224.12 L 216.98,225.29 L 219.65,230.09 L 219.80,231.77 L 219.22,234.75 L 219.20,236.16 L 220.82,241.62 L 221.72,243.29 L 223.98,246.24 L 226.49,251.10 L 227.07,253.66 L 226.81,255.62 L 229.25,258.67 L 230.36,262.69 L 232.39,265.30 L 233.91,266.61 L 234.92,267.11 L 235.95,265.54 L 235.72,264.88 L 233.46,262.34 L 238.22,261.93 L 238.83,262.13 L 239.94,260.78 L 239.18,260.77 L 239.45,260.45 L 238.86,259.92 L 238.83,259.49 L 239.74,258.22 L 240.92,257.31 L 251.86,253.59 L 252.86,253.20 L 254.11,252.23 L 254.74,250.72 L 256.20,240.90 L 257.36,239.30 L 258.59,238.38 L 262.26,237.33 L 264.53,237.21 L 265.83,236.47 L 266.63,235.48 L 269.77,229.33 L 272.18,223.59 L 275.69,219.59 L 279.71,213.35 L 285.03,207.21 L 283.14,204.40 L 283.13,203.88 L 284.11,204.41 L 285.29,204.49 L 287.47,205.31 L 289.84,205.80 L 293.80,205.64 L 294.98,206.26 L 297.73,206.98 L 300.51,208.27 L 301.63,207.18 L 303.31,206.52 L 303.53,205.37 L 303.25,203.81 L 303.67,203.51 L 303.99,202.55 L 304.63,201.76 L 306.02,201.51 L 305.47,199.82 L 305.86,197.52 L 305.77,196.50 L 305.13,195.01 L 305.22,194.81 L 306.48,194.73 L 307.14,194.11 L 307.25,192.88 L 306.82,190.60 L 307.62,188.84 L 308.65,187.62 L 309.02,186.74 L 310.05,186.73 L 311.38,187.53 L 311.46,187.92 L 312.87,188.22 L 313.85,188.82 L 316.83,186.97 L 317.69,184.74 L 319.31,184.35 L 324.36,185.16 L 326.25,182.82 L 327.53,182.13 L 329.18,181.95 L 330.36,182.30 L 330.81,182.08 L 331.95,183.73 L 333.39,184.87 L 333.79,186.34 L 333.49,188.62 L 334.64,189.43 L 335.08,190.10 L 336.11,190.48 L 336.77,192.33 L 337.78,193.60 L 339.78,191.67 L 341.19,190.72 L 341.84,190.72 L 342.54,190.29 L 343.24,188.08 L 343.78,187.92 L 344.24,187.13 L 344.71,187.03 L 346.13,185.73 L 347.31,185.13 L 348.21,183.98 L 349.83,183.21 L 349.88,182.33 L 351.51,181.48 L 352.28,180.20 L 355.15,177.66 L 355.15,177.31 L 355.87,176.62 L 355.67,176.03 L 355.13,175.90 L 355.75,175.18 L 355.49,174.56 L 355.72,174.23 L 356.35,174.04 L 357.22,174.47 L 358.11,174.33 L 361.55,171.50 L 362.17,171.35 L 363.38,171.60 L 365.31,173.60 L 366.76,174.20 L 368.64,172.97 L 370.01,173.20 L 371.24,172.33 L 369.97,170.50 L 365.89,167.43 L 363.86,165.10 L 360.98,163.77 L 358.90,162.05 L 356.93,157.75 L 356.64,156.61 L 354.61,153.52 L 353.54,148.57 L 353.56,145.95 L 353.79,145.12 L 355.41,142.88 L 356.48,142.34 L 358.77,142.27 L 361.66,141.03 L 362.97,139.88 L 362.96,139.35 L 359.36,135.09 L 357.32,130.10 L 357.50,129.43 L 358.44,128.22 L 362.87,124.01 L 363.90,121.96 L 363.87,120.26 L 362.91,119.52 L 359.97,118.89 L 353.09,118.73 L 352.27,117.70 L 352.00,116.03 L 351.92,110.05 L 351.37,109.22 L 350.36,108.56 L 349.85,108.56 L 348.98,109.17 L 346.85,109.62 L 343.83,109.57 L 342.35,109.14 L 340.77,107.12 L 340.26,105.77 L 339.95,99.52 L 339.55,97.25 L 339.26,97.04 Z",
+    "NOROESTE": "M 113.14,227.25 L 111.30,232.42 L 111.06,232.53 L 111.41,233.91 L 105.16,235.95 L 106.05,238.69 L 102.93,239.70 L 103.39,241.04 L 100.27,242.09 L 100.69,243.43 L 97.56,244.45 L 97.98,245.77 L 94.88,246.78 L 95.32,248.25 L 94.34,250.39 L 94.83,250.81 L 94.11,252.79 L 94.71,254.99 L 95.75,257.08 L 94.19,257.68 L 94.19,258.62 L 93.73,258.97 L 94.23,261.15 L 95.63,262.81 L 95.88,263.84 L 95.81,264.45 L 95.23,265.39 L 95.43,265.40 L 95.42,266.59 L 94.31,268.21 L 92.55,269.81 L 92.38,272.66 L 91.00,274.32 L 91.14,276.12 L 93.16,277.15 L 91.65,280.28 L 93.61,281.05 L 98.62,285.13 L 98.82,285.31 L 98.66,285.72 L 99.66,286.67 L 101.22,290.04 L 102.32,290.79 L 103.31,290.87 L 102.66,292.51 L 100.23,292.13 L 98.64,292.41 L 97.16,294.87 L 95.88,299.36 L 96.00,300.64 L 96.30,300.91 L 96.51,301.88 L 96.70,304.73 L 97.26,306.58 L 93.37,309.60 L 92.95,313.15 L 108.29,303.33 L 110.68,302.80 L 113.17,303.40 L 116.40,305.47 L 118.13,306.15 L 120.18,306.19 L 124.73,305.51 L 126.63,305.84 L 128.13,306.72 L 132.30,310.52 L 134.50,311.47 L 136.47,311.81 L 136.46,313.02 L 137.92,313.06 L 141.39,313.88 L 143.58,313.48 L 144.82,312.71 L 145.69,311.73 L 147.30,307.16 L 152.51,300.05 L 160.02,295.15 L 163.37,293.60 L 162.90,292.89 L 163.10,291.15 L 164.80,290.70 L 165.47,289.84 L 165.61,289.15 L 165.23,288.09 L 166.70,287.83 L 172.06,289.58 L 173.84,289.73 L 180.60,288.09 L 182.32,287.49 L 186.13,285.45 L 188.54,281.53 L 191.99,279.15 L 192.99,278.69 L 197.24,277.65 L 198.01,277.68 L 199.79,278.46 L 202.26,281.17 L 205.80,281.78 L 208.39,280.88 L 208.93,280.38 L 211.33,279.35 L 211.74,277.65 L 212.30,277.53 L 213.61,277.52 L 220.87,278.68 L 222.94,278.48 L 224.78,277.38 L 228.85,272.62 L 233.76,269.66 L 235.01,269.21 L 236.39,269.14 L 235.14,267.86 L 233.71,266.93 L 233.13,265.78 L 232.39,265.30 L 230.36,262.69 L 229.25,258.67 L 226.81,255.62 L 227.07,253.66 L 226.49,251.10 L 223.98,246.24 L 221.72,243.29 L 220.82,241.62 L 219.20,236.16 L 219.22,234.75 L 219.80,231.77 L 219.65,230.09 L 216.98,225.29 L 217.00,224.12 L 218.13,219.89 L 218.08,218.57 L 215.54,210.85 L 213.47,213.53 L 211.92,214.66 L 195.61,220.36 L 193.49,221.39 L 180.88,231.64 L 173.76,236.01 L 172.82,236.83 L 171.30,238.91 L 165.70,249.75 L 164.34,251.82 L 163.15,252.97 L 148.27,263.86 L 146.88,265.74 L 143.37,265.37 L 144.04,263.72 L 142.41,264.19 L 141.87,262.28 L 142.37,259.78 L 141.32,255.61 L 140.16,255.85 L 140.29,256.87 L 137.45,254.32 L 137.08,258.11 L 136.13,257.24 L 132.22,255.34 L 127.52,245.30 L 126.57,244.42 L 124.61,243.59 L 123.98,242.98 L 122.70,237.46 L 122.03,235.32 L 121.42,234.28 L 118.25,231.32 L 113.72,227.95 L 113.14,227.25 Z",
+    "NORTE": "M 229.92,70.30 L 224.97,73.26 L 223.28,73.71 L 222.00,74.37 L 221.27,76.52 L 219.58,78.25 L 219.27,78.84 L 218.67,91.16 L 218.75,94.39 L 219.20,95.67 L 227.76,114.78 L 226.15,113.72 L 222.84,113.32 L 222.01,112.96 L 219.50,109.97 L 216.97,108.71 L 209.41,118.74 L 203.74,122.05 L 201.55,123.78 L 212.46,138.63 L 217.61,144.04 L 214.17,149.63 L 213.09,150.81 L 211.91,151.47 L 210.63,151.72 L 207.85,151.25 L 209.77,153.03 L 210.15,154.49 L 229.06,159.18 L 232.36,162.64 L 242.33,166.46 L 241.43,168.89 L 241.49,171.49 L 241.26,172.33 L 241.35,173.03 L 241.98,173.64 L 242.43,175.02 L 243.36,175.64 L 244.35,175.88 L 244.84,175.71 L 247.49,182.49 L 248.61,184.52 L 249.33,185.14 L 250.48,185.59 L 253.49,185.52 L 253.94,186.59 L 254.96,186.99 L 255.84,186.56 L 256.28,184.56 L 257.54,182.35 L 261.05,179.57 L 261.61,176.97 L 264.27,170.02 L 268.94,161.21 L 270.04,159.72 L 277.70,154.64 L 278.82,154.21 L 280.94,154.01 L 281.76,152.38 L 282.81,151.46 L 283.17,151.36 L 283.39,151.75 L 284.03,151.99 L 286.96,151.72 L 287.57,150.79 L 287.20,150.22 L 287.37,148.19 L 288.22,147.25 L 290.56,149.01 L 291.34,149.28 L 293.13,149.17 L 293.57,148.74 L 295.70,149.14 L 297.42,148.09 L 297.75,147.15 L 297.22,145.91 L 296.72,145.50 L 295.90,145.59 L 294.87,146.14 L 293.82,145.98 L 293.00,145.34 L 292.81,143.71 L 291.89,143.02 L 291.61,142.49 L 291.63,139.17 L 291.20,138.42 L 290.06,137.51 L 289.96,136.16 L 290.79,133.91 L 292.27,132.99 L 294.65,132.17 L 296.27,130.18 L 296.93,128.66 L 297.77,127.78 L 296.06,123.37 L 295.78,123.02 L 295.30,123.01 L 295.13,122.37 L 293.83,121.00 L 293.34,119.89 L 293.10,118.47 L 293.29,117.77 L 294.70,116.37 L 296.47,116.84 L 298.51,115.68 L 299.21,114.96 L 299.38,114.21 L 298.39,113.30 L 298.45,111.15 L 299.90,109.48 L 300.17,109.25 L 300.64,109.38 L 301.48,111.03 L 304.38,112.67 L 306.01,112.30 L 315.14,112.93 L 317.56,112.40 L 319.68,111.40 L 321.55,111.29 L 325.61,112.10 L 326.73,111.77 L 327.46,111.93 L 329.70,114.77 L 330.60,114.37 L 332.53,114.41 L 333.77,114.03 L 335.01,112.58 L 335.32,111.83 L 333.55,110.94 L 332.42,109.96 L 331.90,108.86 L 334.80,107.41 L 335.57,102.63 L 335.44,101.09 L 337.54,99.76 L 339.26,97.04 L 338.36,97.17 L 337.46,98.09 L 336.50,98.48 L 335.65,97.99 L 335.12,98.47 L 333.81,98.90 L 332.83,98.47 L 331.47,98.99 L 328.67,98.97 L 328.12,100.09 L 327.93,102.44 L 327.35,102.00 L 326.44,102.11 L 325.29,101.70 L 324.69,100.80 L 324.05,100.49 L 322.55,101.53 L 322.11,101.14 L 321.63,101.85 L 320.52,101.90 L 320.37,102.59 L 319.75,102.46 L 318.86,102.70 L 316.66,101.08 L 316.15,99.36 L 314.51,99.52 L 312.32,98.47 L 312.11,97.50 L 312.50,96.92 L 312.33,95.76 L 311.65,95.32 L 310.82,94.00 L 311.32,92.92 L 311.23,92.32 L 309.59,92.02 L 307.89,91.03 L 306.63,90.88 L 304.93,91.25 L 304.48,91.04 L 303.49,88.69 L 303.97,87.69 L 304.11,86.36 L 304.68,86.09 L 304.83,83.65 L 305.54,81.41 L 305.46,80.34 L 304.98,79.52 L 302.64,78.28 L 300.99,78.75 L 300.61,79.79 L 299.40,81.63 L 298.29,82.47 L 297.61,82.30 L 295.48,80.16 L 292.86,78.25 L 291.99,79.04 L 290.77,79.51 L 289.20,79.00 L 288.05,79.18 L 287.13,78.69 L 285.03,78.65 L 284.64,78.13 L 284.42,76.76 L 283.42,74.25 L 282.08,71.44 L 281.42,71.41 L 280.38,70.25 L 277.72,69.16 L 275.46,69.73 L 274.22,70.63 L 271.71,71.38 L 270.82,72.00 L 269.09,74.03 L 268.69,75.89 L 267.99,76.98 L 267.50,78.76 L 265.72,78.12 L 264.63,76.17 L 262.79,74.90 L 260.72,72.69 L 258.17,73.10 L 254.21,71.98 L 252.38,71.15 L 249.29,69.03 L 248.11,66.97 L 246.62,66.19 L 241.89,66.04 L 241.32,66.23 L 240.64,67.26 L 239.16,72.50 L 238.77,72.79 L 236.11,72.10 L 234.30,72.88 L 233.24,71.40 L 230.50,70.71 L 229.92,70.30 Z",
+    "OESTE": "M 92.95,313.15 L 92.99,313.41 L 93.73,313.32 L 93.97,313.93 L 94.44,313.71 L 95.06,314.48 L 97.86,323.29 L 99.67,325.25 L 99.82,326.22 L 101.99,326.79 L 103.44,328.18 L 104.58,327.86 L 105.37,328.46 L 109.68,329.32 L 111.22,330.35 L 114.12,330.13 L 116.24,329.38 L 118.13,330.19 L 120.37,333.92 L 121.66,334.99 L 121.82,335.70 L 122.55,336.65 L 122.68,337.06 L 121.88,340.13 L 122.98,340.96 L 123.99,340.96 L 126.03,341.84 L 127.54,343.47 L 127.22,344.61 L 132.41,346.33 L 140.90,361.95 L 142.85,364.18 L 149.12,369.32 L 151.97,372.43 L 155.11,377.40 L 156.18,381.81 L 157.00,383.74 L 158.04,384.66 L 161.77,386.21 L 163.84,387.68 L 165.88,392.99 L 166.37,393.70 L 169.86,395.77 L 182.56,402.37 L 183.80,403.67 L 185.46,406.28 L 186.64,407.12 L 189.00,407.50 L 196.89,406.93 L 198.46,407.46 L 199.55,408.41 L 200.90,411.22 L 201.06,412.68 L 200.89,414.97 L 200.22,417.20 L 195.14,424.77 L 194.57,426.76 L 194.67,428.63 L 196.66,427.80 L 198.60,425.92 L 199.42,424.25 L 201.20,422.91 L 203.66,419.75 L 203.84,418.58 L 204.28,418.04 L 204.30,417.17 L 204.77,416.31 L 205.88,415.82 L 207.69,416.03 L 207.56,413.14 L 207.26,412.20 L 207.96,410.70 L 209.73,410.07 L 211.88,407.03 L 213.39,406.41 L 214.53,406.28 L 215.94,405.01 L 217.67,404.38 L 218.78,402.92 L 219.27,400.65 L 221.04,400.00 L 221.54,399.49 L 221.52,398.84 L 220.73,397.36 L 220.83,397.00 L 221.64,396.71 L 223.39,396.89 L 223.23,394.91 L 224.10,393.53 L 222.27,391.07 L 222.06,389.57 L 223.70,383.61 L 225.30,379.31 L 225.03,378.37 L 226.37,374.69 L 224.81,374.19 L 218.71,373.35 L 214.21,371.61 L 212.73,370.45 L 212.02,368.62 L 212.24,368.36 L 212.06,367.20 L 212.39,363.99 L 212.19,362.78 L 211.17,361.06 L 207.88,356.96 L 207.28,355.79 L 206.91,352.67 L 207.67,349.64 L 207.39,348.13 L 203.53,342.09 L 201.09,337.28 L 200.71,335.86 L 201.04,333.32 L 201.79,331.65 L 204.21,329.34 L 207.87,326.77 L 208.14,325.84 L 208.16,323.85 L 208.59,323.10 L 209.43,322.57 L 211.58,322.10 L 212.76,321.00 L 212.73,317.24 L 213.77,311.45 L 215.38,307.76 L 213.21,307.15 L 207.96,301.24 L 205.38,293.97 L 208.52,281.28 L 208.39,280.88 L 205.80,281.78 L 202.55,281.28 L 201.48,280.50 L 199.79,278.46 L 198.01,277.68 L 197.24,277.65 L 192.99,278.69 L 191.99,279.15 L 188.54,281.53 L 186.13,285.45 L 182.32,287.49 L 180.60,288.09 L 173.84,289.73 L 172.06,289.58 L 166.70,287.83 L 165.23,288.09 L 165.61,289.15 L 165.47,289.84 L 164.80,290.70 L 163.10,291.15 L 162.90,292.89 L 163.37,293.60 L 160.02,295.15 L 152.51,300.05 L 147.30,307.16 L 146.24,310.66 L 145.55,311.92 L 144.02,313.26 L 142.49,313.80 L 141.39,313.88 L 137.92,313.06 L 136.46,313.02 L 136.47,311.81 L 134.50,311.47 L 132.30,310.52 L 128.13,306.72 L 126.63,305.84 L 124.73,305.51 L 120.18,306.19 L 118.13,306.15 L 116.40,305.47 L 113.17,303.40 L 110.68,302.80 L 108.29,303.33 L 92.95,313.15 Z",
+    "PAMPULHA": "M 119.96,119.27 L 118.01,119.05 L 115.13,119.25 L 115.23,122.54 L 116.12,124.97 L 115.95,126.16 L 114.50,127.71 L 113.81,128.05 L 111.08,128.00 L 109.97,127.31 L 108.42,134.25 L 105.83,138.37 L 104.38,139.17 L 104.08,140.37 L 110.87,156.49 L 123.46,167.60 L 120.72,168.38 L 115.25,168.87 L 114.59,169.17 L 115.01,169.97 L 118.48,173.43 L 118.92,174.34 L 116.68,175.39 L 115.36,177.41 L 112.88,180.19 L 111.29,178.93 L 111.01,177.31 L 110.27,176.34 L 107.54,178.21 L 105.99,178.80 L 105.82,179.05 L 106.04,183.00 L 100.90,192.02 L 101.54,192.52 L 103.50,192.52 L 105.92,193.66 L 106.98,194.69 L 107.25,195.59 L 107.23,196.91 L 107.05,197.74 L 106.37,198.49 L 106.18,199.56 L 107.54,202.63 L 112.17,208.67 L 111.47,209.52 L 112.71,212.55 L 114.28,212.14 L 115.82,217.31 L 114.05,220.20 L 113.49,226.30 L 113.14,227.25 L 113.72,227.95 L 118.25,231.32 L 121.42,234.28 L 122.03,235.32 L 122.70,237.46 L 123.98,242.98 L 124.61,243.59 L 126.57,244.42 L 127.52,245.30 L 132.22,255.34 L 136.13,257.24 L 137.08,258.11 L 137.45,254.32 L 140.29,256.87 L 140.16,255.85 L 141.32,255.61 L 142.37,259.78 L 141.87,262.28 L 142.41,264.19 L 144.04,263.72 L 143.37,265.37 L 146.88,265.74 L 148.27,263.86 L 163.15,252.97 L 164.86,251.18 L 171.30,238.91 L 172.82,236.83 L 174.60,235.38 L 179.01,232.97 L 180.88,231.64 L 193.10,221.67 L 195.61,220.36 L 211.51,214.83 L 212.75,214.19 L 218.80,206.55 L 220.95,201.06 L 222.78,198.15 L 223.79,197.17 L 225.24,196.56 L 230.03,196.00 L 244.36,191.66 L 249.61,190.38 L 256.18,187.22 L 255.84,186.56 L 254.96,186.99 L 253.94,186.59 L 253.49,185.52 L 251.34,185.70 L 250.07,185.47 L 248.61,184.52 L 247.97,183.59 L 244.84,175.71 L 244.35,175.88 L 242.82,175.43 L 242.30,174.78 L 241.98,173.64 L 241.35,173.03 L 241.43,168.89 L 242.33,166.46 L 232.36,162.64 L 229.06,159.18 L 210.15,154.49 L 209.77,153.03 L 207.85,151.25 L 210.63,151.72 L 211.91,151.47 L 213.09,150.81 L 214.17,149.63 L 217.61,144.04 L 212.46,138.63 L 201.55,123.78 L 199.08,127.19 L 198.27,124.03 L 196.00,124.31 L 195.40,124.10 L 191.58,121.39 L 188.43,121.61 L 185.07,125.20 L 179.96,127.31 L 178.55,128.92 L 177.59,129.20 L 177.03,129.94 L 175.80,130.64 L 171.75,131.24 L 170.99,131.08 L 170.06,131.37 L 168.21,132.65 L 167.61,132.59 L 167.23,134.56 L 168.54,136.11 L 168.85,137.62 L 168.08,140.99 L 166.95,140.72 L 158.56,144.49 L 158.45,143.68 L 155.92,141.13 L 143.76,130.15 L 143.17,125.72 L 142.33,124.67 L 140.53,124.16 L 136.63,123.88 L 129.80,125.21 L 128.43,125.78 L 126.73,121.30 L 119.96,119.27 Z",
+    "VENDA NOVA": "M 119.96,119.27 L 126.73,121.30 L 128.43,125.78 L 129.80,125.21 L 136.63,123.88 L 140.53,124.16 L 142.33,124.67 L 143.17,125.72 L 143.76,130.15 L 155.92,141.13 L 158.45,143.68 L 158.56,144.49 L 166.95,140.72 L 168.08,140.99 L 168.85,137.62 L 168.54,136.11 L 167.23,134.56 L 167.61,132.59 L 168.21,132.65 L 170.06,131.37 L 170.99,131.08 L 171.75,131.24 L 175.80,130.64 L 177.03,129.94 L 177.59,129.20 L 178.55,128.92 L 179.96,127.31 L 185.07,125.20 L 188.58,121.54 L 191.58,121.39 L 195.40,124.10 L 196.00,124.31 L 198.27,124.03 L 199.08,127.19 L 200.98,124.35 L 202.74,122.72 L 209.41,118.74 L 216.97,108.71 L 219.50,109.97 L 222.01,112.96 L 222.84,113.32 L 226.15,113.72 L 227.76,114.78 L 219.20,95.67 L 218.75,94.39 L 218.61,92.61 L 219.27,78.84 L 220.09,77.56 L 221.27,76.52 L 222.00,74.37 L 223.28,73.71 L 224.97,73.26 L 229.92,70.30 L 228.25,69.72 L 228.12,69.00 L 226.86,66.47 L 225.86,65.24 L 225.11,63.43 L 223.58,61.55 L 223.29,60.48 L 223.67,56.10 L 224.21,54.53 L 222.88,51.53 L 222.73,50.13 L 222.93,48.62 L 223.78,46.61 L 223.73,45.26 L 224.43,41.70 L 226.52,40.03 L 225.79,38.17 L 226.70,36.11 L 226.41,34.35 L 223.41,34.37 L 222.55,33.87 L 220.62,33.67 L 219.70,33.95 L 218.84,35.00 L 218.45,33.91 L 218.01,33.60 L 216.46,33.88 L 214.71,35.80 L 214.24,34.82 L 212.28,34.52 L 209.93,35.51 L 208.19,35.72 L 206.34,35.39 L 205.52,35.72 L 204.03,37.91 L 203.67,40.16 L 202.47,40.28 L 202.06,40.58 L 201.54,40.35 L 200.53,40.53 L 199.63,41.33 L 199.50,42.19 L 198.32,43.53 L 197.83,44.83 L 196.38,45.89 L 194.71,46.41 L 193.65,47.56 L 193.01,49.56 L 193.56,51.83 L 194.15,52.51 L 195.36,53.00 L 196.36,54.33 L 195.94,56.51 L 196.16,57.81 L 195.82,58.55 L 195.96,59.17 L 195.23,59.44 L 194.16,59.22 L 192.79,59.55 L 191.60,58.94 L 191.40,58.00 L 190.84,57.45 L 190.55,56.55 L 189.12,54.41 L 188.56,54.25 L 187.90,53.53 L 186.99,53.76 L 185.39,50.11 L 184.37,49.27 L 182.99,48.79 L 180.94,46.27 L 178.51,44.91 L 177.70,43.28 L 175.37,43.20 L 171.76,44.23 L 169.76,43.05 L 169.47,43.65 L 168.03,43.91 L 167.09,44.56 L 165.04,44.69 L 164.19,46.32 L 162.60,47.44 L 159.68,48.31 L 158.59,48.91 L 157.72,48.96 L 154.18,47.15 L 153.57,47.92 L 154.48,49.80 L 153.97,50.45 L 153.78,52.15 L 153.17,52.87 L 152.31,52.94 L 152.97,53.58 L 153.65,56.63 L 152.98,60.96 L 153.22,62.56 L 151.96,64.49 L 151.77,65.84 L 150.99,67.10 L 149.19,68.87 L 147.04,67.93 L 145.38,69.02 L 142.87,69.47 L 141.31,71.59 L 140.10,72.00 L 138.85,71.91 L 136.06,73.51 L 135.86,74.05 L 136.62,77.31 L 136.17,83.06 L 133.07,86.08 L 131.76,89.43 L 130.61,90.99 L 129.61,91.72 L 128.26,92.03 L 126.31,93.09 L 125.61,94.69 L 124.54,95.90 L 122.96,98.51 L 125.17,100.23 L 125.14,102.88 L 125.73,104.45 L 127.27,107.03 L 127.82,109.90 L 127.49,110.42 L 124.76,112.36 L 123.50,113.02 L 122.71,112.92 L 121.87,113.21 L 121.08,116.60 L 120.29,119.05 L 119.96,119.27 Z"
+  };
+  var bhCentroids = {
+    "NORTE": [258.9,118.3],
+    "NORDESTE": [292.5,178.0],
+    "LESTE": [298.2,269.4],
+    "BARREIRO": [120.2,425.9],
+    "OESTE": [172.9,343.2],
+    "PAMPULHA": [165.6,184.4],
+    "VENDA NOVA": [177.8,88.5],
+    "NOROESTE": [158.8,265.9],
+    "CENTRO-SUL": [248.7,326.0]
+  };
+
+  function scale(domain,range){
+    return function(v){
+      var t = (v-domain[0])/(domain[1]-domain[0]);
+      return range[0] + t*(range[1]-range[0]);
+    };
+  }
+
+  /* ---------- elevation ranked list ---------- */
+  (function(){
+    var el = document.getElementById('elev-rank');
+    if(!el) return;
+    var sorted = regioes.slice().sort(function(a,b){ return b.elevacao-a.elevacao; });
+    var eDomain = [780, 1145];
+    var wScale = scale(eDomain,[10,100]);
+    sorted.forEach(function(r){
+      var t = (r.elevacao-eDomain[0])/(eDomain[1]-eDomain[0]);
+      var color = rampColor(elevRamp,t);
+      var row = document.createElement('div');
+      row.className = 'rank-row';
+      row.innerHTML =
+        '<div class="rank-name">'+r.nome+'</div>'+
+        '<div class="rank-track"><div class="rank-fill" style="width:'+wScale(r.elevacao)+'%; background:'+color+';"></div></div>'+
+        '<div class="rank-val tab">'+r.elevacao+' m</div>';
+      el.appendChild(row);
+    });
+  })();
+
+  /* ---------- perfil territorial: relevo x cobertura vegetal ---------- */
+  (function(){
+    var svg = document.getElementById('thermal-scatter');
+    if(!svg) return;
+    var ns = 'http://www.w3.org/2000/svg';
+    var M = {top:16,right:26,bottom:40,left:52};
+    var W = 680, H = 380;
+    var plotW = W-M.left-M.right, plotH = H-M.top-M.bottom;
+
+    var xDomain = [0,13];
+    var yDomain = [760,1165];
+    var x = scale(xDomain,[M.left,M.left+plotW]);
+    var y = scale(yDomain,[M.top+plotH,M.top]);
+    var eDomain = [780,1145];
+
+    function el(tag,attrs){
+      var e = document.createElementNS(ns,tag);
+      for(var k in attrs){ e.setAttribute(k,attrs[k]); }
+      return e;
+    }
+
+    // quadrant shading: baixa altitude + baixa vegetacao (maior exposicao) -> canto inferior esquerdo
+    var qx = x(4.5), qy = y(950);
+    svg.appendChild(el('rect',{x:M.left,y:qy,width:qx-M.left,height:(M.top+plotH)-qy,fill:'var(--destaque-soft)','fill-opacity':'0.55'}));
+    svg.appendChild(el('rect',{x:qx,y:M.top,width:(M.left+plotW)-qx,height:qy-M.top,fill:'var(--secondary-soft)','fill-opacity':'0.55'}));
+
+    [0,3,6,9,12].forEach(function(v){
+      svg.appendChild(el('line',{x1:x(v),x2:x(v),y1:M.top,y2:M.top+plotH,class:'grid-line'}));
+      var t = el('text',{x:x(v),y:M.top+plotH+18,'text-anchor':'middle',class:'axis-label'});
+      t.textContent = v+'%';
+      svg.appendChild(t);
+    });
+    var xTitle = el('text',{x:M.left+plotW/2,y:H-4,'text-anchor':'middle',class:'axis-label'});
+    xTitle.textContent = 'Cobertura vegetal →';
+    svg.appendChild(xTitle);
+
+    [800,900,1000,1100].forEach(function(v){
+      svg.appendChild(el('line',{x1:M.left,x2:M.left+plotW,y1:y(v),y2:y(v),class:'grid-line'}));
+      var t = el('text',{x:M.left-10,y:y(v)+4,'text-anchor':'end',class:'axis-label'});
+      t.textContent = v+' m';
+      svg.appendChild(t);
+    });
+    var yTitle = el('text',{x:-(M.top+plotH/2), y:16, 'text-anchor':'middle', class:'axis-label', transform:'rotate(-90)'});
+    yTitle.textContent = 'Altitude média ↑';
+    svg.appendChild(yTitle);
+
+    var lblExp = el('text',{x:M.left+10,y:M.top+plotH-10,class:'axis-label',fill:'var(--destaque)','font-weight':'600'});
+    lblExp.textContent = 'Maior exposição térmica';
+    svg.appendChild(lblExp);
+    var lblLow = el('text',{x:M.left+plotW-10,y:M.top+16,'text-anchor':'end',class:'axis-label',fill:'var(--secondary)','font-weight':'600'});
+    lblLow.textContent = 'Menor exposição';
+    svg.appendChild(lblLow);
+
+    regioes.forEach(function(reg){
+      var cx = x(reg.vegetacao), cy = y(reg.elevacao);
+      var t = (reg.elevacao-eDomain[0])/(eDomain[1]-eDomain[0]);
+      var fill = rampColor(elevRamp,t);
+      var circle = el('circle',{cx:cx,cy:cy,r:9,fill:fill,class:'bubble','fill-opacity':'0.92'});
+      circle.addEventListener('mousemove',function(evt){
+        showTip(evt.clientX, evt.clientY,
+          '<b>'+reg.nome+'</b><br>'+
+          '<div class="row"><span>Altitude média</span><span class="tab">'+reg.elevacao+' m</span></div>'+
+          '<div class="row"><span>Cobertura vegetal</span><span class="tab">'+fmtPct(reg.vegetacao)+'</span></div>'
+        );
+      });
+      circle.addEventListener('mouseleave', hideTip);
+      svg.appendChild(circle);
+
+      var anchor = cx > (M.left+plotW-70) ? 'end' : 'start';
+      var dx = anchor==='end' ? -13 : 13;
+      var dy = 4;
+      if(reg.nome === 'Norte'){ dy = 16; }
+      if(reg.nome === 'Nordeste'){ dx = anchor==='end' ? -13 : 20; dy = -8; }
+      var label = el('text',{x:cx+dx, y:cy+dy, 'text-anchor':anchor, class:'bubble-label'});
+      label.textContent = reg.nome;
+      svg.appendChild(label);
+    });
+  })();
+
+  /* ---------- bubble chart ---------- */
+  (function(){
+    var svg = document.getElementById('bubble-chart');
+    if(!svg) return;
+    var ns = 'http://www.w3.org/2000/svg';
+    var M = {top:16,right:26,bottom:40,left:46};
+    var W = 720, H = 430;
+    var plotW = W-M.left-M.right, plotH = H-M.top-M.bottom;
+
+    var xDomain = [2000,10500];
+    var yDomain = [0,13];
+    var x = scale(xDomain,[M.left,M.left+plotW]);
+    var y = scale(yDomain,[M.top+plotH,M.top]);
+    var rDomain = [200000,315000];
+    var r = scale(rDomain,[14,40]);
+    var eDomain = [780,1145];
+
+    function el(tag,attrs){
+      var e = document.createElementNS(ns,tag);
+      for(var k in attrs){ e.setAttribute(k,attrs[k]); }
+      return e;
+    }
+
+    [2500,5000,7500,10000].forEach(function(v){
+      svg.appendChild(el('line',{x1:x(v),x2:x(v),y1:M.top,y2:M.top+plotH,class:'grid-line'}));
+      var t = el('text',{x:x(v),y:M.top+plotH+18,'text-anchor':'middle',class:'axis-label'});
+      t.textContent = 'R$ '+(v/1000)+'k';
+      svg.appendChild(t);
+    });
+    var xTitle = el('text',{x:M.left+plotW/2,y:H-4,'text-anchor':'middle',class:'axis-label'});
+    xTitle.textContent = 'Renda média domiciliar →';
+    svg.appendChild(xTitle);
+
+    [0,3,6,9,12].forEach(function(v){
+      svg.appendChild(el('line',{x1:M.left,x2:M.left+plotW,y1:y(v),y2:y(v),class:'grid-line'}));
+      var t = el('text',{x:M.left-10,y:y(v)+4,'text-anchor':'end',class:'axis-label'});
+      t.textContent = v+'%';
+      svg.appendChild(t);
+    });
+    var yTitle = el('text',{x:-(M.top+plotH/2), y:14, 'text-anchor':'middle', class:'axis-label', transform:'rotate(-90)'});
+    yTitle.textContent = 'Cobertura vegetal ↑';
+    svg.appendChild(yTitle);
+
+    var pts = regioes.map(function(reg){
+      var cx = x(reg.renda), cy = y(reg.vegetacao), rad = r(reg.populacao);
+      var t = (reg.elevacao-eDomain[0])/(eDomain[1]-eDomain[0]);
+      return {reg:reg, cx:cx, cy:cy, rad:rad, fill:rampColor(elevRamp,t)};
+    });
+
+    var byPop = pts.slice().sort(function(a,b){ return b.reg.populacao-a.reg.populacao; });
+    byPop.forEach(function(p){
+      var circle = el('circle',{cx:p.cx,cy:p.cy,r:p.rad,fill:p.fill,class:'bubble','fill-opacity':'0.88'});
+      circle.addEventListener('mousemove',function(evt){
+        showTip(evt.clientX, evt.clientY,
+          '<b>'+p.reg.nome+'</b><br>'+
+          '<div class="row"><span>População</span><span class="tab">'+fmtInt(p.reg.populacao)+' hab.</span></div>'+
+          '<div class="row"><span>Renda média</span><span class="tab">'+fmtMoney(p.reg.renda)+'</span></div>'+
+          '<div class="row"><span>Cobertura vegetal</span><span class="tab">'+fmtPct(p.reg.vegetacao)+'</span></div>'+
+          '<div class="row"><span>Altitude média</span><span class="tab">'+p.reg.elevacao+' m</span></div>'
+        );
+      });
+      circle.addEventListener('mouseleave', hideTip);
+      svg.appendChild(circle);
+    });
+
+    function textW(str){ return str.length*6.3+6; }
+    var LH = 13;
+    var placed = [];
+    function overlaps(a,b){ return !(a.x1<b.x0-2 || a.x0>b.x1+2 || a.y1<b.y0-2 || a.y0>b.y1+2); }
+    function hitsBubble(cx,cy,w,h,anchor,skipIdx){
+      var x0 = anchor==='start'?cx:(anchor==='end'?cx-w:cx-w/2);
+      var rectCx = x0+w/2, rectCy = cy-h/2;
+      for(var i=0;i<pts.length;i++){
+        if(i===skipIdx) continue;
+        var p = pts[i];
+        var dx = Math.max(Math.abs(rectCx-p.cx)-w/2,0);
+        var dy = Math.max(Math.abs(rectCy-p.cy)-h/2,0);
+        var dist = Math.sqrt(dx*dx+dy*dy);
+        if(dist < p.rad+3) return true;
+      }
+      return false;
+    }
+    function buildCandidates(rad){
+      var out = [];
+      var radii = [rad+9, rad+22, rad+38, rad+58, rad+82];
+      var angles = [-90,-45,0,45,90,135,180,-135,-60,-120,20,160];
+      radii.forEach(function(dist){
+        angles.forEach(function(deg){
+          var rad2 = deg*Math.PI/180;
+          var dx = Math.cos(rad2)*dist, dy = Math.sin(rad2)*dist;
+          var anchor = dx>8 ? 'start' : (dx<-8 ? 'end' : 'middle');
+          out.push({dx:dx, dy:dy, anchor:anchor, dist:dist});
+        });
+      });
+      return out;
+    }
+
+    var order = pts.map(function(p,i){ return i; }).sort(function(ia,ib){
+      return pts[ib].rad - pts[ia].rad;
+    });
+
+    order.forEach(function(i){
+      var p = pts[i];
+      var w = textW(p.reg.nome), h = LH;
+      var candidates = buildCandidates(p.rad);
+      var chosen = null;
+      for(var c=0;c<candidates.length;c++){
+        var cand = candidates[c];
+        var lx = p.cx+cand.dx, ly = p.cy+cand.dy;
+        var x0 = cand.anchor==='start'?lx:(cand.anchor==='end'?lx-w:lx-w/2);
+        var box = {x0:x0, y0:ly-h+3, x1:x0+w, y1:ly+3};
+        if(box.x0 < M.left-4 || box.x1 > W-M.right+4 || box.y0 < 2 || box.y1 > H-M.bottom+2) continue;
+        var collide = placed.some(function(b){ return overlaps(box,b); });
+        if(collide) continue;
+        if(hitsBubble(lx,ly,w,h,cand.anchor,i)) continue;
+        chosen = {lx:lx, ly:ly, anchor:cand.anchor, box:box, dist:cand.dist};
+        break;
+      }
+      if(!chosen){
+        var cand0 = candidates[0];
+        var lx0 = p.cx+cand0.dx, ly0 = p.cy+cand0.dy;
+        var x00 = lx0-w/2;
+        chosen = {lx:lx0, ly:ly0, anchor:'middle', box:{x0:x00,y0:ly0-h+3,x1:x00+w,y1:ly0+3}, dist:cand0.dist};
+      }
+      placed.push(chosen.box);
+
+      if(chosen.dist > p.rad+16){
+        var edgeT = Math.atan2(chosen.ly-p.cy, chosen.lx-p.cx);
+        var lx1 = p.cx+Math.cos(edgeT)*(p.rad+2), ly1 = p.cy+Math.sin(edgeT)*(p.rad+2);
+        var lx2 = p.cx+Math.cos(edgeT)*(chosen.dist-9), ly2 = p.cy+Math.sin(edgeT)*(chosen.dist-9);
+        var leader = el('line',{x1:lx1,y1:ly1,x2:lx2,y2:ly2,stroke:'var(--ink-faint)','stroke-width':'1','stroke-dasharray':'2,2'});
+        svg.appendChild(leader);
+      }
+
+      var label = el('text',{x:chosen.lx, y:chosen.ly, 'text-anchor':chosen.anchor, class:'bubble-label'});
+      label.textContent = p.reg.nome;
+      svg.appendChild(label);
+    });
+  })();
+
+  /* ---------- choropleth map: regionais reais de BH ---------- */
+  (function(){
+    var svg = document.getElementById('bh-map');
+    if(!svg) return;
+    var ns = 'http://www.w3.org/2000/svg';
+    function el(tag,attrs){
+      var e = document.createElementNS(ns,tag);
+      for(var k in attrs){ e.setAttribute(k,attrs[k]); }
+      return e;
+    }
+    var byNome = {};
+    regioes.forEach(function(r){ byNome[r.nome.toUpperCase()] = r; });
+
+    Object.keys(bhPaths).forEach(function(name){
+      var d = vulnIndex.byName[name];
+      var fill = d ? rampColor(vulnRamp, d.idx/100) : 'var(--line)';
+      var path = el('path',{class:'map-region', d:bhPaths[name], fill:fill});
+      path.addEventListener('mousemove',function(evt){
+        if(!d){ return; }
+        showTip(evt.clientX, evt.clientY,
+          '<b>'+cap(name)+'</b><br>'+
+          '<div class="row"><span>Índice social-climático</span><span class="tab">'+d.idx.toFixed(0)+' / 100</span></div>'+
+          '<div class="row"><span>Renda média</span><span class="tab">'+fmtMoney(d.renda)+'</span></div>'+
+          '<div class="row"><span>Cobertura vegetal</span><span class="tab">'+fmtPct(d.vegetacao)+'</span></div>'
+        );
+      });
+      path.addEventListener('mouseleave', hideTip);
+      svg.appendChild(path);
+    });
+
+    function cap(name){
+      return name.toLowerCase().replace(/(^|\s)\S/g, function(c){ return c.toUpperCase(); });
+    }
+
+    Object.keys(bhCentroids).forEach(function(name){
+      var c = bhCentroids[name];
+      var label = el('text',{x:c[0], y:c[1], class:'map-label'});
+      label.textContent = cap(name);
+      svg.appendChild(label);
+    });
+  })();
+
+  /* ---------- vulnerability composite bars ---------- */
+  (function(){
+    var withIndex = vulnIndex.list.slice().sort(function(a,b){ return b.idx-a.idx; });
+
+    var el = document.getElementById('vbars');
+    if(!el) return;
+    withIndex.forEach(function(d){
+      var color = rampColor(vulnRamp, d.idx/100);
+      var row = document.createElement('div');
+      row.className = 'vbar-row';
+      row.innerHTML =
+        '<div class="vbar-name">'+d.nome+'</div>'+
+        '<div class="vbar-track"><div class="vbar-fill" style="width:'+d.idx.toFixed(1)+'%; background:'+color+';"></div></div>'+
+        '<div class="vbar-val tab">'+d.idx.toFixed(0)+'</div>';
+      row.addEventListener('mousemove',function(evt){
+        showTip(evt.clientX, evt.clientY,
+          '<b>'+d.nome+'</b><br>'+
+          '<div class="row"><span>Índice</span><span class="tab">'+d.idx.toFixed(0)+' / 100</span></div>'+
+          '<div class="row"><span>Renda média</span><span class="tab">'+fmtMoney(d.renda)+'</span></div>'+
+          '<div class="row"><span>Cobertura vegetal</span><span class="tab">'+fmtPct(d.vegetacao)+'</span></div>'
+        );
+      });
+      row.addEventListener('mouseleave', hideTip);
+      el.appendChild(row);
+    });
+  })();
+
+})();
+</script>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
